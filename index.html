@@ -53,12 +53,27 @@ img { max-width:100%; height:auto; display:block; }
 .header-top {
   display:flex; flex-direction:column; align-items:center;
   padding:14px 24px 0;
+  position:relative;
+}
+.header-row {
+  display:flex; align-items:center; justify-content:center;
+  width:100%; position:relative; margin-bottom:10px;
 }
 .logo-img {
-  height:42px; margin-bottom:10px; cursor:pointer;
+  height:42px; cursor:pointer;
 }
 .header-btns {
   display:flex; gap:12px; margin-bottom:12px;
+}
+/* Lang switch always in top-right */
+.lang-switch {
+  position:absolute; right:0; top:50%; transform:translateY(-50%);
+  display:inline-flex; align-items:center; gap:6px;
+  cursor:pointer;
+  padding:5px 12px; border-radius:var(--radius-sm);
+  border:1px solid var(--border); background:var(--bg-secondary);
+  font-size:13px; font-weight:600; color:var(--text-primary);
+  font-family:'Montserrat',sans-serif; z-index:10;
 }
 .btn {
   display:inline-flex; align-items:center; justify-content:center;
@@ -100,14 +115,6 @@ img { max-width:100%; height:auto; display:block; }
 }
 .nav-bar a:hover { color:var(--accent); background:var(--accent-glow); }
 
-.lang-switch {
-  display:inline-flex; align-items:center; gap:6px;
-  cursor:pointer; position:relative;
-  padding:5px 12px; border-radius:var(--radius-sm);
-  border:1px solid var(--border); background:var(--bg-secondary);
-  font-size:13px; font-weight:600; color:var(--text-primary);
-  font-family:'Montserrat',sans-serif; margin-left:8px;
-}
 .lang-switch:hover { border-color:var(--accent); }
 .lang-dd {
   display:none; position:absolute; top:110%; right:0;
@@ -125,7 +132,7 @@ img { max-width:100%; height:auto; display:block; }
 /* Hamburger */
 .hamburger {
   display:none; flex-direction:column; gap:5px;
-  cursor:pointer; padding:4px; position:absolute; right:24px; top:22px;
+  cursor:pointer; padding:4px; position:absolute; left:0; top:50%; transform:translateY(-50%);
 }
 .hamburger span { display:block; width:24px; height:2px; background:var(--text-primary); border-radius:2px; }
 .mobile-nav {
@@ -386,13 +393,23 @@ section { padding:56px 0; }
 <!-- ===== HEADER ===== -->
 <div class="top-header">
   <div class="header-top">
-    <img src="https://1winperu.pro/wp-content/uploads/2025/05/logo.webp" alt="1Win" class="logo-img" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <div class="header-row">
+      <div class="hamburger" id="hamb" onclick="document.getElementById('mnav').classList.add('open')">
+        <span></span><span></span><span></span>
+      </div>
+      <img src="https://1winperu.pro/wp-content/uploads/2025/05/logo.webp" alt="1Win" class="logo-img" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      <div class="lang-switch" onclick="toggleDD()">
+        <img id="clang-flag" src="https://flagcdn.com/w40/gb.png" alt="" style="width:20px;height:14px;border-radius:2px;object-fit:cover;">
+        <span id="clang">EN</span> ▾
+        <div class="lang-dd" id="ldd">
+          <span onclick="setLang('en')"><img src="https://flagcdn.com/w40/gb.png" alt="" style="width:18px;height:13px;border-radius:2px;object-fit:cover;vertical-align:middle;margin-right:8px;">English</span>
+          <span onclick="setLang('es')"><img src="https://flagcdn.com/w40/es.png" alt="" style="width:18px;height:13px;border-radius:2px;object-fit:cover;vertical-align:middle;margin-right:8px;">Español</span>
+        </div>
+      </div>
+    </div>
     <div class="header-btns">
       <a href="https://lkxw.cc/0b297f" target="_blank" class="btn btn-accent" data-i18n="btn_create">CREATE ACCOUNT</a>
       <a href="https://lkxw.cc/0b297f" target="_blank" class="btn btn-outline-accent" data-i18n="btn_download">DOWNLOAD APP</a>
-    </div>
-    <div class="hamburger" id="hamb" onclick="document.getElementById('mnav').classList.add('open')">
-      <span></span><span></span><span></span>
     </div>
   </div>
   <nav class="nav-bar">
@@ -406,14 +423,6 @@ section { padding:56px 0; }
     <a href="#" data-i18n="nav_esports">eSports</a>
     <a href="#" data-i18n="nav_payments">Deposit and Withdrawal</a>
     <a href="#" data-i18n="nav_contacts">Contacts</a>
-    <div class="lang-switch" onclick="toggleDD()">
-      <img id="clang-flag" src="https://flagcdn.com/w40/gb.png" alt="" style="width:20px;height:14px;border-radius:2px;object-fit:cover;">
-      <span id="clang">EN</span> ▾
-      <div class="lang-dd" id="ldd">
-        <span onclick="setLang('en')"><img src="https://flagcdn.com/w40/gb.png" alt="" style="width:18px;height:13px;border-radius:2px;object-fit:cover;vertical-align:middle;margin-right:8px;">English</span>
-        <span onclick="setLang('es')"><img src="https://flagcdn.com/w40/es.png" alt="" style="width:18px;height:13px;border-radius:2px;object-fit:cover;vertical-align:middle;margin-right:8px;">Español</span>
-      </div>
-    </div>
   </nav>
 </div>
 
