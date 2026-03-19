@@ -1,152 +1,149 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>➤ Bono 1Win Perú Oficial | Bono $700 en 1win Perú</title>
-    <meta name="description" content="Entra y descubre todo sobre bono 1win Perú oficial. ✅ Reclama tu bono de bienvenida de $700. Pagos rápidos con Yape y Plin en Perú. ¡Regístrate hoy!">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --bg-dark: #0a0e17;
-            --bg-card: #151b29;
-            --1win-blue: #0088cc;
-            --1win-accent: #ff9900;
-            --text-light: #f0f4f8;
-        }
-        
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
-        body { background-color: var(--bg-dark); color: var(--text-light); line-height: 1.6; padding-bottom: 80px; }
-        
-        /* Navbar */
-        header { background: #000; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; border-bottom: 2px solid var(--1win-blue); }
-        .logo { font-size: 24px; font-weight: 900; color: #fff; text-decoration: none; }
-        .logo span { color: var(--1win-accent); }
-        .btn-login { background: transparent; border: 1px solid var(--1win-blue); color: var(--text-light); padding: 8px 20px; border-radius: 5px; text-decoration: none; font-weight: 700; margin-right: 10px; }
-        .btn-register { background: var(--1win-blue); color: #fff; padding: 8px 20px; border-radius: 5px; text-decoration: none; font-weight: 700; }
-        
-        /* Hero Section */
-        .hero { position: relative; background: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat; text-align: center; padding: 80px 20px; }
-        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(10, 14, 23, 0.8); }
-        .hero-content { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
-        .badge { display: inline-block; background: var(--1win-accent); color: #000; font-weight: 900; padding: 5px 15px; border-radius: 20px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; animation: pulse 1.5s infinite; }
-        h1 { font-size: 42px; font-weight: 900; margin-bottom: 20px; text-shadow: 2px 2px 10px rgba(0,0,0,0.8); }
-        .hero p { font-size: 18px; margin-bottom: 30px; }
-        
-        /* Main Container */
-        .container { max-width: 900px; margin: -40px auto 40px; padding: 0 20px; position: relative; z-index: 2; }
-        .card { background: var(--bg-card); padding: 30px; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.05); margin-bottom: 30px; }
-        
-        h2 { color: var(--1win-accent); margin-bottom: 20px; font-size: 24px; display: flex; align-items: center; gap: 10px; }
-        p { margin-bottom: 20px; color: #b3c5d5; }
-        
-        /* Steps */
-        .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }
-        .step { background: rgba(0, 136, 204, 0.1); padding: 20px; border-radius: 10px; border-left: 4px solid var(--1win-blue); }
-        .step i { font-size: 30px; color: var(--1win-accent); margin-bottom: 10px; }
-        .step h3 { font-size: 18px; margin-bottom: 10px; }
-        
-        /* Trust Bar */
-        .trust-bar { text-align: center; padding: 20px; background: #000; border-radius: 10px; margin-bottom: 30px; }
-        .trust-bar p { margin-bottom: 10px; font-weight: bold; color: #fff; }
-        .trust-icons { display: flex; justify-content: center; gap: 20px; font-size: 30px; color: #b3c5d5; }
-        
-        /* Buttons */
-        .btn-main { display: block; width: 100%; background: linear-gradient(to right, #ff9900, #ff5500); color: #fff; text-align: center; padding: 20px; font-size: 26px; font-weight: 900; text-transform: uppercase; border-radius: 10px; text-decoration: none; box-shadow: 0 10px 20px rgba(255, 153, 0, 0.4); transition: transform 0.2s; }
-        .btn-main:hover { transform: scale(1.02); color: #fff; }
-        
-        /* Sticky Footer CTA (Mobile mostly) */
-        .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; background: var(--bg-card); padding: 15px 20px; border-top: 2px solid var(--1win-accent); z-index: 1000; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 -5px 20px rgba(0,0,0,0.5); }
-        .sticky-cta .text { font-weight: 700; font-size: 16px; color: #fff; }
-        .sticky-cta .btn-small { background: var(--1win-accent); color: #000; padding: 10px 20px; border-radius: 5px; font-weight: 900; text-decoration: none; text-transform: uppercase; }
-        
-        footer { text-align: center; padding: 40px 20px; color: #666; font-size: 12px; }
-        
-        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.7; } 100% { opacity: 1; } }
-        
-        @media (max-width: 768px) {
-            h1 { font-size: 28px; }
-            header .btn-login { display: none; }
-            .btn-main { font-size: 20px; padding: 15px; }
-        }
-    </style>
-</head>
-<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Bono 1Win Perú — Sitio Oficial | 1Win Perú 2026</title>
+<meta name="description" content="Bono 1Win Perú — Sitio Oficial — Bono 500% hasta S/ 7.200. Casino online y apuestas deportivas en Perú.">
+<meta name="keywords" content="bono 1win peru oficial, 1win peru, casino online peru, apuestas deportivas peru">
+<link rel="canonical" href="https://www.casinobono-peru.com/bono-1win-peru-oficial.html">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23131729'/%3E%3Ctext x='3' y='23' font-family='Arial' font-weight='900' font-size='14' fill='%23fff'%3E1w%3C/text%3E%3Ccircle cx='25' cy='10' r='5' fill='%2304c0d8'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--a:#04c0d8;--a2:#37d8ea;--bg:#131729;--bg2:#1a1f36;--c:#1e2440;--t:#eaedf5;--t2:#9aa0b8;--bd:rgba(255,255,255,.07);--r:14px;--rs:8px}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Open Sans',sans-serif;background:var(--bg);color:var(--t);line-height:1.7;overflow-x:hidden}h1,h2,h3,h4{font-family:'Montserrat',sans-serif;font-weight:700;line-height:1.3}a{text-decoration:none;color:var(--a);transition:.3s}a:hover{color:var(--a2)}img{max-width:100%;height:auto;display:block}.w{max-width:1240px;margin:0 auto;padding:0 24px}
+.hd{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(19,23,41,.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--bd)}.hr{display:flex;align-items:center;justify-content:center;width:100%;position:relative;margin-bottom:10px}.ht{display:flex;flex-direction:column;align-items:center;padding:14px 24px 0;position:relative}.logo{height:42px;cursor:pointer}.hb{display:flex;gap:12px;margin-bottom:12px}
+.b{display:inline-flex;align-items:center;justify-content:center;padding:11px 28px;border-radius:var(--rs);font-family:'Montserrat',sans-serif;font-weight:700;font-size:13px;letter-spacing:.5px;cursor:pointer;border:none;transition:.3s;text-transform:uppercase;white-space:nowrap}.ba{background:linear-gradient(135deg,var(--a),var(--a2));color:#fff;box-shadow:0 4px 20px rgba(0,0,0,.25)}.ba:hover{transform:translateY(-1px);color:#fff}.bo{background:0;color:var(--a);border:2px solid var(--a)}.bo:hover{background:var(--a);color:#fff}
+.ls{position:absolute;right:0;top:50%;transform:translateY(-50%);display:inline-flex;align-items:center;gap:6px;cursor:pointer;padding:5px 12px;border-radius:var(--rs);border:1px solid var(--bd);background:var(--bg2);font-size:13px;font-weight:600;color:var(--t);font-family:'Montserrat',sans-serif;z-index:10}.ls:hover{border-color:var(--a)}.ld{display:none;position:absolute;top:110%;right:0;background:var(--c);border:1px solid var(--bd);border-radius:var(--rs);overflow:hidden;box-shadow:0 4px 32px rgba(0,0,0,.4);min-width:110px;z-index:50}.ld.sh{display:block}.ld span{display:block;padding:8px 16px;font-size:13px;color:var(--t);cursor:pointer;transition:.3s}.ld span:hover{background:var(--a);color:#fff}
+.hm{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;position:absolute;left:0;top:50%;transform:translateY(-50%)}.hm span{display:block;width:24px;height:2px;background:var(--t);border-radius:2px}.mn{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--bg);z-index:9999;padding:80px 24px 24px;overflow-y:auto;flex-direction:column;gap:4px}.mn.op{display:flex}.mn a{display:block;color:var(--t2);font-size:16px;font-weight:600;padding:14px 16px;border-radius:var(--rs);font-family:'Montserrat',sans-serif}.mn a:hover{color:var(--a)}.mc{position:absolute;top:20px;right:24px;font-size:28px;color:var(--t);cursor:pointer;background:0;border:0}
+nav.nb{display:flex;align-items:center;justify-content:center;gap:0;padding:0 24px 10px;flex-wrap:wrap}nav.nb a{color:var(--t2);font-size:13px;font-weight:600;padding:6px 14px;border-radius:var(--rs);transition:.3s;font-family:'Montserrat',sans-serif}nav.nb a:hover{color:var(--a)}
+.hero{margin-top:130px;padding:60px 0 50px;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--bg) 0%,#1c1840 50%,var(--bg) 100%)}.hg{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.hero h1{font-size:36px;font-weight:800;margin-bottom:20px}.hero p{font-size:15px;color:var(--t2);margin-bottom:24px;line-height:1.8}
+.bb{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.04);border:1px solid var(--bd);border-radius:var(--r);padding:16px 24px;margin-bottom:24px}.bb svg rect{fill:var(--a)}.bb .tx{font-family:'Montserrat',sans-serif;font-weight:700;font-size:17px}
+s{display:block;padding:56px 0}.st{font-size:28px;margin-bottom:12px}.sd{font-size:15px;color:var(--t2);margin-bottom:36px;max-width:750px}
+.tb{width:100%;border-collapse:collapse;background:var(--c);border-radius:var(--r);overflow:hidden;border:1px solid var(--bd)}.tb tr{border-bottom:1px solid var(--bd)}.tb tr:last-child{border-bottom:none}.tb td{padding:13px 20px;font-size:14px}.tb td:first-child{font-weight:600;color:var(--a);width:35%;background:rgba(255,255,255,.02);font-family:'Montserrat',sans-serif}.tb td:last-child{color:var(--t2)}.tb th{background:linear-gradient(135deg,var(--a),var(--a2));color:#fff;padding:14px 20px;font-family:'Montserrat',sans-serif;font-size:14px;text-align:left}
+.cb{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-bottom:48px}.cb.rv{direction:rtl}.cb.rv>*{direction:ltr}.cb h3{font-size:22px;margin-bottom:12px}.cb p,.cb .sl{font-size:14px;color:var(--t2)}.cb img{border-radius:var(--r);width:100%}
+.bg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.bc{background:var(--c);border:1px solid var(--bd);border-radius:var(--r);padding:28px 20px;text-align:center;transition:.3s}.bc:hover{border-color:var(--a);transform:translateY(-4px)}.bc img{width:90px;height:90px;margin:0 auto 16px;border-radius:12px;object-fit:cover}.bc h4{font-size:15px;margin-bottom:6px}.bc p{font-size:13px;color:var(--t2)}
+.si{display:flex;gap:16px;align-items:flex-start;margin-bottom:12px;font-size:14px;color:var(--t2)}.si .n{flex-shrink:0;width:32px;height:32px;background:linear-gradient(135deg,var(--a),var(--a2));border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-weight:800;font-size:14px;color:#fff;margin-top:2px}
+.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.sc{background:var(--c);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;transition:.3s}.sc:hover{border-color:var(--a);transform:translateY(-4px)}.sc img{width:100%;height:180px;object-fit:cover}.sc>div{padding:18px}.sc h4{font-size:16px;margin-bottom:6px}.sc p{font-size:13px;color:var(--t2)}
+.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.tc{background:var(--c);border:1px solid var(--bd);border-radius:var(--r);padding:24px 20px;transition:.3s}.tc:hover{border-color:var(--a)}.tc h4{font-size:16px;margin-bottom:8px;color:var(--a)}.tc p{font-size:14px;color:var(--t2)}
+.hs{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.hs>div{background:var(--c);border:1px solid var(--bd);border-radius:var(--r);padding:22px 14px;text-align:center;transition:.3s}.hs>div:hover{border-color:var(--a)}.hs .n2{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;background:linear-gradient(135deg,var(--a),var(--a2));border-radius:50%;font-family:'Montserrat',sans-serif;font-weight:800;font-size:15px;color:#fff;margin-bottom:12px}.hs h4{font-size:14px;margin-bottom:6px}.hs p{font-size:12px;color:var(--t2)}
+.fl{display:flex;flex-direction:column;gap:10px}.fl>div{display:flex;align-items:flex-start;gap:12px;font-size:14px;color:var(--t2)}.fl .d{flex-shrink:0;width:8px;height:8px;background:var(--a);border-radius:50%;margin-top:7px}
+.ag{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.ac{display:flex;align-items:flex-start;gap:14px;background:var(--c);border:1px solid var(--bd);border-radius:var(--r);padding:18px}.ac .ic{flex-shrink:0;width:40px;height:40px;background:rgba(255,255,255,.04);border:1px solid var(--bd);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--a);line-height:0}.ac h4{font-size:14px;margin-bottom:3px}.ac p{font-size:13px;color:var(--t2)}
+.fi{background:var(--c);border:1px solid var(--bd);border-radius:var(--r);margin-bottom:10px;overflow:hidden}.fq{padding:16px 22px;font-family:'Montserrat',sans-serif;font-weight:600;font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;transition:.3s}.fq:hover{color:var(--a)}.fq .ar{font-size:18px;color:var(--a);transition:.3s}.fi.on .ar{transform:rotate(180deg)}.fa{max-height:0;overflow:hidden;transition:max-height .4s ease}.fa-in{padding:0 22px 16px;font-size:14px;color:var(--t2)}
+.ft{background:var(--bg2);border-top:1px solid var(--bd);padding:40px 0 20px}.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px;margin-bottom:32px}.ft h5{font-size:13px;color:var(--a);margin-bottom:12px;text-transform:uppercase;letter-spacing:1px}.ft a{display:block;color:var(--t2);font-size:13px;margin-bottom:8px}.ft a:hover{color:var(--a)}.fb{border-top:1px solid var(--bd);padding-top:18px;display:flex;align-items:center;justify-content:space-between;font-size:12px;color:#6b7089}
+.up{position:fixed;bottom:28px;right:28px;z-index:900;width:48px;height:48px;border-radius:50%;background:var(--a);color:#fff;display:none;align-items:center;justify-content:center;font-size:22px;cursor:pointer;border:none;box-shadow:0 4px 16px rgba(0,0,0,.3)}.up.v{display:flex}
+@media(max-width:1024px){nav.nb{display:none}.hm{display:flex}.hg,.cb{grid-template-columns:1fr}.cb.rv{direction:ltr}.bg,.sg{grid-template-columns:repeat(2,1fr)}.tg{grid-template-columns:1fr}.hs{grid-template-columns:repeat(3,1fr)}.ag{grid-template-columns:1fr}.fg{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.hero{margin-top:120px;padding:40px 0 30px}.hero h1{font-size:24px}.st{font-size:22px}.bg,.sg,.hs{grid-template-columns:1fr}.fg{grid-template-columns:1fr}.fb{flex-direction:column;gap:10px;text-align:center}.hb .b{padding:9px 16px;font-size:11px}}
+</style></head><body>
+<div class="hd"><div class="ht"><div class="hr"><div class="hm" onclick="document.getElementById('mn').classList.add('op')"><span></span><span></span><span></span></div><img src="https://1winperu.pro/wp-content/uploads/2025/05/logo.webp" alt="1Win" class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'})"><div class="ls" onclick="this.querySelector('.ld').classList.toggle('sh')"><img id="lf" src="https://flagcdn.com/w40/gb.png" style="width:20px;height:14px;border-radius:2px;object-fit:cover"><span id="cl">EN</span> ▾<div class="ld"><span onclick="sL('en')"><img src="https://flagcdn.com/w40/gb.png" style="width:18px;height:13px;border-radius:2px;object-fit:cover;vertical-align:middle;margin-right:8px">English</span><span onclick="sL('es')"><img src="https://flagcdn.com/w40/es.png" style="width:18px;height:13px;border-radius:2px;object-fit:cover;vertical-align:middle;margin-right:8px">Español</span></div></div></div><div class="hb"><a href="https://lkxw.cc/0b297f" target="_blank" class="b ba" data-i="bc">CREATE ACCOUNT</a><a href="https://lkxw.cc/0b297f" target="_blank" class="b bo" data-i="bd">DOWNLOAD APP</a></div></div><nav class="nb"><a href="https://lkxw.cc/0b297f" target="_blank">App</a><a href="https://lkxw.cc/0b297f" target="_blank" data-i="nr">Registration</a><a href="https://lkxw.cc/0b297f" target="_blank" data-i="nb">Bonus</a><a href="https://lkxw.cc/0b297f" target="_blank">Casino</a><a href="https://lkxw.cc/0b297f" target="_blank" data-i="nl">Live Casino</a><a href="https://lkxw.cc/0b297f" target="_blank" data-i="nq">Quick Games</a><a href="https://lkxw.cc/0b297f" target="_blank" data-i="ns">Deportes</a><a href="https://lkxw.cc/0b297f" target="_blank">eSports</a><a href="https://lkxw.cc/0b297f" target="_blank" data-i="np">Deposit and Withdrawal</a><a href="https://lkxw.cc/0b297f" target="_blank" data-i="nc">Contacts</a></nav></div>
+<div class="mn" id="mn"><button class="mc" onclick="document.getElementById('mn').classList.remove('op')">✕</button><a href="https://lkxw.cc/0b297f" target="_blank">App</a><a href="https://lkxw.cc/0b297f" target="_blank" data-i="nr">Registration</a><a href="https://lkxw.cc/0b297f" target="_blank" data-i="nb">Bonus</a><a href="https://lkxw.cc/0b297f" target="_blank">Casino</a><a href="https://lkxw.cc/0b297f" target="_blank" data-i="nl">Live Casino</a><a href="https://lkxw.cc/0b297f" target="_blank">eSports</a><a href="https://lkxw.cc/0b297f" target="_blank" data-i="nc">Contacts</a><br><a href="https://lkxw.cc/0b297f" target="_blank" class="b ba" style="text-align:center" data-i="bc">CREATE ACCOUNT</a></div>
+<button class="up" id="up" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
-    <header>
-        <a href="https://lkxw.cc/0b297f" class="logo">1WIN <span>PERÚ</span></a>
-        <div>
-            <a href="https://lkxw.cc/0b297f" class="btn-login" rel="nofollow">Entrar</a>
-            <a href="https://lkxw.cc/0b297f" class="btn-register" rel="nofollow">Registro</a>
-        </div>
-    </header>
+<section class="hero"><div class="w"><div class="hg"><div><h1 id="ht">Bono 1Win Perú — Sitio Oficial</h1><p id="hd">Bono de bienvenida 1Win Perú: hasta 500% en 4 depósitos (máximo S/ 7.200). Cashback 30% semanal en slots, 200 1Win Coins por descargar la app, bonos multi apuesta y códigos promocionales exclusivos.</p><div class="bb"><div><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8"/><path d="M18 12v14M11 16h14M13 12c0-1.7 1.3-3 3-3s3 1.3 3 3M17 12c0-1.7 1.3-3 3-3s3 1.3 3 3M11 16v8a2 2 0 002 2h10a2 2 0 002-2v-8H11z" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="11" y="13" width="14" height="5" rx="1" stroke="#fff" stroke-width="1.8"/></svg></div><div class="tx" id="bn">500% Bono de Bienvenida hasta S/ 7.200</div></div><a href="https://lkxw.cc/0b297f" target="_blank" class="b ba" style="padding:14px 36px;font-size:14px" data-i="br">REGÍSTRATE EN 1WIN</a></div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/1win-principal-cabecera.webp" alt="Bono 1Win Perú — Sitio Oficial"></div></div></div></section>
 
-    <div class="hero">
-        <div class="hero-content">
-            <span class="badge">🔥 Promoción Activa Marzo 2026</span>
-            <h1>Todo sobre: Bono 1win Perú Oficial</h1>
-            <p>Reclama hoy tu bono del 500% en primeros depósitos y empieza a jugar con el saldo a tu favor.</p>
-            <a href="https://lkxw.cc/0b297f" class="btn-main" rel="nofollow" target="_blank">¡RECLAMAR BONO $700!</a>
-        </div>
-    </div>
+<section><div class="w"><h2 class="st" id="ov">Resumen de 1Win</h2><p class="sd" id="od">1Win es una plataforma global de juegos de azar operada por NextGen Development Labs Ltd desde 2016. Más de 10.400 juegos, licencia de Curazao y métodos de pago locales.</p>
+<table class="tb"><tr><td data-i="ty">Año de Fundación</td><td>2016</td></tr><tr><td data-i="tl">Licencia</td><td>8048/JAZ 2018-040 (Curazao)</td></tr><tr><td data-i="to">Propietario</td><td>NextGen Development Labs Ltd</td></tr><tr><td data-i="ti">Idiomas</td><td data-i="tiv">Español, Inglés, Alemán, Árabe, Chino y más</td></tr><tr><td data-i="tp">Perú</td><td data-i="tpv">Sí</td></tr><tr><td data-i="ts">Servicios</td><td data-i="tsv">Apuestas, casino, juegos en vivo, póker</td></tr><tr><td data-i="tw">Bono</td><td data-i="twv">500% en 4 depósitos hasta 7.200 PEN</td></tr><tr><td data-i="tc">Monedas</td><td>PEN, CLP, CAD, INR, BTC</td></tr><tr><td>App</td><td data-i="tav">Android e iOS</td></tr><tr><td data-i="tm">Pagos</td><td data-i="tmv">Tarjetas, Yape, cripto, transferencias</td></tr><tr><td data-i="td">Dep. Mín.</td><td>5 PEN</td></tr><tr><td data-i="tr">Ret. Mín.</td><td>15 PEN</td></tr><tr><td data-i="tu">Soporte</td><td data-i="tuv">Chat, email, teléfono 24/7</td></tr></table></div></section>
 
-    <main class="container">
-        
-        <div class="trust-bar">
-            <p>Métodos de pago aceptados en Perú 🇵🇪</p>
-            <div class="trust-icons">
-                <i class="fa-brands fa-cc-visa"></i>
-                <i class="fa-brands fa-cc-mastercard"></i>
-                <i class="fa-brands fa-bitcoin"></i>
-                <i class="fa-solid fa-mobile-screen"></i> <i class="fa-solid fa-building-columns"></i>
-            </div>
-        </div>
+<section><div class="w">
+<div class="cb"><div><h3 id="lt">Licencia</h3><p id="ld2">1Win opera legalmente en Perú bajo licencia 8048/JAZ 2018-040 de Curazao, garantizando cumplimiento de estándares internacionales sobre juego responsable y protección de datos.</p></div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-licencia-internacional.webp" alt=""></div></div>
+<div class="cb rv"><div><h3 id="ht2">Historia</h3><p id="hd2">La historia de 1Win comenzó en 2016. Desde entonces hemos evolucionado con deportes, casino, juegos en vivo y funciones exclusivas. Presencia en mercados importantes incluyendo Perú.</p></div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-la-historia.webp" alt=""></div></div>
+<div class="cb"><div><h3 id="at">Embajador de Marca</h3><p id="ad">En julio 2024, David Warner fue anunciado como embajador global de 1Win. En noviembre 2024 lanzamos la campaña benéfica "1Win 1000 Hits".</p></div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-embajador-global.webp" alt=""></div></div>
+</div></section>
 
-        <div class="card">
-            <h2><i class="fa-solid fa-star"></i> Ventajas Exclusivas</h2>
-            <p>El casino número 1 ha llegado con todo. Hablaremos a fondo sobre <strong>bono 1win Perú oficial</strong> y cómo puedes activar la promoción más jugosa del mercado peruano. ¡No dejes pasar esta oportunidad exclusiva!</p>
-            <p>Registrarse toma menos de 1 minuto. La plataforma cuenta con una interfaz premium donde encontrarás miles de slots explosivos, mesas en vivo con crupieres reales y las cuotas deportivas más altas. Todo optimizado para tu celular.</p>
-        </div>
+<section><div class="w"><h2 class="st" id="bt">Beneficios para Jugadores Peruanos</h2><p class="sd" id="bd2">Características que optimizan la experiencia de apuestas y juegos para el usuario local.</p>
+<div class="bg">
+<div class="bc"><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-beneficios-aplicaciones.webp" alt=""><h4 data-i="b1t">Apps Móviles Gratuitas</h4><p data-i="b1d">iOS y Android, diseño responsivo.</p></div>
+<div class="bc"><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-beneficios-juegos-con-licencia.webp" alt=""><h4 data-i="b2t">Juegos con Licencia</h4><p data-i="b2d">150+ proveedores internacionales.</p></div>
+<div class="bc"><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-beneficios-oferta-deportiva.webp" alt=""><h4 data-i="b3t">Oferta Deportiva</h4><p data-i="b3d">10.000+ eventos diarios.</p></div>
+<div class="bc"><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-beneficios-juegos-exclusivos.webp" alt=""><h4 data-i="b4t">Juegos Exclusivos</h4><p data-i="b4d">Solo en 1Win.</p></div>
+<div class="bc"><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-beneficios-interfaz.webp" alt=""><h4 data-i="b5t">Interfaz Optimizada</h4><p data-i="b5d">Rápida y multidispositivo.</p></div>
+<div class="bc"><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-beneficios-bonificacion.webp" alt=""><h4 data-i="b6t">Bono Progresivo</h4><p data-i="b6d">+500% en 4 depósitos.</p></div>
+</div></div></section>
 
-        <h2 style="text-align: center; margin: 40px 0 20px; color: #fff;">¿Cómo empezar a ganar?</h2>
-        <div class="steps">
-            <div class="step">
-                <i class="fa-solid fa-user-plus"></i>
-                <h3>1. Regístrate</h3>
-                <p>Crea tu cuenta en 1 minuto usando el enlace oficial.</p>
-            </div>
-            <div class="step">
-                <i class="fa-solid fa-wallet"></i>
-                <h3>2. Deposita</h3>
-                <p>Usa Yape, Plin o tu tarjeta. Mínimo desde S/20.</p>
-            </div>
-            <div class="step">
-                <i class="fa-solid fa-money-bill-wave"></i>
-                <h3>3. Multiplica</h3>
-                <p>Recibe tu bono del 500% y retira tus ganancias rápido.</p>
-            </div>
-        </div>
+<section><div class="w"><h2 class="st" id="bnt">Bonos de 1Win en Perú</h2>
+<table class="tb"><thead><tr><th data-i="bnc1">Bono</th><th data-i="bnc2">Descripción</th></tr></thead><tbody>
+<tr><td data-i="bn1n">500% primer depósito</td><td data-i="bn1d">Hasta 500% en 4 depósitos, máximo 7.200 PEN.</td></tr>
+<tr><td data-i="bn2n">30% Cashback</td><td data-i="bn2d">Semanal en slots. Sábados, sin requisitos.</td></tr>
+<tr><td data-i="bn3n">Bono descarga app</td><td data-i="bn3d">200 1Win Coins canjeables.</td></tr>
+<tr><td data-i="bn4n">Multi apuesta</td><td data-i="bn4d">Extra en parlays de 5+ eventos.</td></tr>
+</tbody></table></div></section>
 
-        <div class="card">
-            <h2><i class="fa-solid fa-shield-halved"></i> Seguridad y Confianza</h2>
-            <p>Seguridad garantizada: plataforma encriptada y con licencia internacional. Deposita con confianza, reclama tu saldo extra y empieza a girar los rodillos. ¡Miles de soles en jackpots se reparten todos los días!</p>
-            <br>
-            <a href="https://lkxw.cc/0b297f" class="btn-main" rel="nofollow" target="_blank">REGISTRARSE EN 1WIN AHORA</a>
-        </div>
-        
-    </main>
+<section><div class="w"><div class="cb"><div><h2 class="st" id="rt">¿Cómo Registrarse?</h2><p style="color:var(--t2);font-size:15px;margin-bottom:18px" id="rd">Proceso simple, acceso inmediato a apuestas y juegos en Perú.</p>
+<div class="si"><div class="n">1</div><span data-i="r1">Haz clic en "Registrarse".</span></div><div class="si"><div class="n">2</div><span data-i="r2">Elige redes sociales o formulario.</span></div><div class="si"><div class="n">3</div><span data-i="r3">Completa tus datos.</span></div><div class="si"><div class="n">4</div><span data-i="r4">Acepta términos.</span></div><div class="si"><div class="n">5</div><span data-i="r5">Haz clic en "Crear cuenta".</span></div>
+</div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-como-registrarte.webp" alt=""></div></div></div></section>
 
-    <div class="sticky-cta">
-        <div class="text">🎁 Bono 500% Activo</div>
-        <a href="https://lkxw.cc/0b297f" class="btn-small" rel="nofollow" target="_blank">Obtener</a>
-    </div>
+<section><div class="w">
+<div class="cb rv"><div><h3 id="vt">Verificación de Cuenta</h3><div class="si"><div class="n">1</div><span data-i="v1">Prepara DNI o pasaporte.</span></div><div class="si"><div class="n">2</div><span data-i="v2">Ve a verificación.</span></div><div class="si"><div class="n">3</div><span data-i="v3">Sube documentos.</span></div><div class="si"><div class="n">4</div><span data-i="v4">Espera hasta 72h.</span></div></div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-verificacion-de-cuenta.webp" alt=""></div></div>
+<div class="cb"><div><h3 id="lgt">Inicio de Sesión</h3><div class="si"><div class="n">1</div><span data-i="l1">Clic en "Iniciar sesión".</span></div><div class="si"><div class="n">2</div><span data-i="l2">Correo y contraseña.</span></div><div class="si"><div class="n">3</div><span data-i="l3">Accede y juega.</span></div></div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-inicio-de-sesion.webp" alt=""></div></div>
+<div class="cb rv"><div><h3 id="pt">Código Promocional</h3><p id="pd">Combinación alfanumérica para bonos extra. Se publican en redes sociales oficiales de 1Win.</p></div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-codigo-promo.webp" alt=""></div></div>
+</div></section>
 
-    <footer>
-        <p>&copy; Marzo 2026 casinobono-peru.com. Portal informativo para jugadores en Perú.</p>
-        <p>El juego puede causar adicción. Juega con responsabilidad. Exclusivo para mayores de 18 años.</p>
-    </footer>
+<section><div class="w"><h2 class="st" id="pyt">Métodos de Pago</h2>
+<table class="tb" style="margin-bottom:40px"><tr><td data-i="dm">Depósito</td><td>Yape, Payvalida, transferencia, Kashio, Visa, MasterCard, BBVA, Tambo, Airtm, cripto</td></tr><tr><td data-i="wm">Retiro</td><td>Transferencia, Airtm, criptomonedas</td></tr></table>
+<div class="cb"><div><h3 id="dpt">¿Cómo Depositar?</h3><div class="si"><div class="n">1</div><span data-i="d1">Clic en "Depositar".</span></div><div class="si"><div class="n">2</div><span data-i="d2">Elige método.</span></div><div class="si"><div class="n">3</div><span data-i="d3">Ingresa monto.</span></div><div class="si"><div class="n">4</div><span data-i="d4">Confirma.</span></div></div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-como-depositar.webp" alt=""></div></div>
+<div class="cb rv"><div><h3 id="wdt">¿Cómo Retirar?</h3><div class="si"><div class="n">1</div><span data-i="w1">Inicia sesión.</span></div><div class="si"><div class="n">2</div><span data-i="w2">Clic en "Retirar".</span></div><div class="si"><div class="n">3</div><span data-i="w3">Elige método.</span></div><div class="si"><div class="n">4</div><span data-i="w4">Confirma monto.</span></div></div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-como-retirar.webp" alt=""></div></div>
+</div></section>
 
-</body>
-</html>
+<section><div class="w"><h2 class="st" id="mat">Apps Móviles</h2>
+<div class="cb"><div><h3>Android</h3><div class="si"><div class="n">1</div><span data-i="a1">Selecciona "App Android".</span></div><div class="si"><div class="n">2</div><span data-i="a2">Descarga APK.</span></div><div class="si"><div class="n">3</div><span data-i="a3">Habilita fuentes desconocidas.</span></div><div class="si"><div class="n">4</div><span data-i="a4">Instala.</span></div></div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-app-android.webp" alt=""></div></div>
+<div class="cb rv"><div><h3>iOS</h3><div class="si"><div class="n">1</div><span data-i="i1">Compartir en Safari.</span></div><div class="si"><div class="n">2</div><span data-i="i2">"Agregar a Inicio".</span></div><div class="si"><div class="n">3</div><span data-i="i3">Nombre: 1Win Perú.</span></div><div class="si"><div class="n">4</div><span data-i="i4">Agregar.</span></div></div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-app-ios.webp" alt=""></div></div>
+</div></section>
+
+<section><div class="w"><h2 class="st" id="spt">Deportes en 1Win</h2>
+<div class="sg">
+<div class="sc"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-deportes-futbol.webp" alt=""><div><h4 data-i="sp1t">Fútbol</h4><p data-i="sp1d">150+ ligas: Premier, La Liga, Serie A.</p></div></div>
+<div class="sc"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-deportes-basquet.webp" alt=""><div><h4 data-i="sp2t">Baloncesto</h4><p data-i="sp2d">90+ ligas con NBA y Euroleague.</p></div></div>
+<div class="sc"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-deportes-voleibol.webp" alt=""><div><h4 data-i="sp3t">Voleibol</h4><p data-i="sp3d">60+ ligas.</p></div></div>
+<div class="sc"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-deportes-tenis.webp" alt=""><div><h4 data-i="sp4t">Tenis</h4><p data-i="sp4d">Grand Slam, ATP, WTA.</p></div></div>
+<div class="sc"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-deportes-esports.webp" alt=""><div><h4>eSports</h4><p data-i="sp5d">CS2, Dota 2, LoL.</p></div></div>
+<div class="sc"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-deportes-virtuales.webp" alt=""><div><h4 data-i="sp6t">Virtuales</h4><p data-i="sp6d">40+ ligas, resultados inmediatos.</p></div></div>
+</div></div></section>
+
+<section><div class="w">
+<div class="cb"><div><h2 class="st" id="lvt">Apuestas en Vivo</h2><p id="lvd">Cuotas en tiempo real en fútbol, baloncesto, tenis, hockey, eSports y más.</p></div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-apuestas-vivo.webp" alt=""></div></div>
+<h2 class="st" id="bst">Cupón de Apuestas</h2><div class="tg" style="margin-bottom:48px"><div class="tc"><h4 data-i="bt1t">Simple</h4><p data-i="bt1d">Monto × cuota.</p></div><div class="tc"><h4>Express</h4><p data-i="bt2d">Todas deben acertar.</p></div><div class="tc"><h4 data-i="bt3t">Serie</h4><p data-i="bt3d">Mismo monto, independientes.</p></div></div>
+<h2 class="st" id="hbt">¿Cómo Apostar?</h2><div class="hs" style="margin-bottom:48px"><div><div class="n2">1</div><h4 data-i="hb1t">Registrarse</h4><p data-i="hb1d">Crea cuenta.</p></div><div><div class="n2">2</div><h4 data-i="hb2t">Depositar</h4><p data-i="hb2d">Elige método.</p></div><div><div class="n2">3</div><h4 data-i="hb3t">Explorar</h4><p data-i="hb3d">Revisa cuotas.</p></div><div><div class="n2">4</div><h4 data-i="hb4t">Elegir</h4><p data-i="hb4d">Deporte y monto.</p></div><div><div class="n2">5</div><h4 data-i="hb5t">Confirmar</h4><p data-i="hb5d">Hacer apuesta.</p></div></div>
+</div></section>
+
+<section><div class="w">
+<div class="cb"><div><h2 class="st" id="odt">Cuotas</h2><div class="tg" style="grid-template-columns:1fr;margin-top:16px"><div class="tc"><h4 data-i="od1t">Decimal</h4><p data-i="od1d">Más usado en Perú.</p></div><div class="tc"><h4 data-i="od2t">Americano</h4><p data-i="od2d">Positivo o negativo.</p></div><div class="tc"><h4 data-i="od3t">Fraccional</h4><p data-i="od3d">Común en UK.</p></div></div></div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-cuotas.webp" alt=""></div></div>
+<h2 class="st" id="ct">Casino Online</h2><p class="sd" id="cd">13.000+ juegos de NetEnt, Microgaming, Evolution, Play'n GO, Pragmatic Play.</p>
+<div class="sg">
+<div class="sc"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-casino-juegos-rapidos.webp" alt=""><div><h4 data-i="c1t">Juegos Rápidos</h4><p data-i="c1d">Aviator, JetX, Lucky Jet.</p></div></div>
+<div class="sc"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-casino-tragamonedas.webp" alt=""><div><h4 data-i="c2t">Tragamonedas</h4><p data-i="c2d">10.000+ juegos.</p></div></div>
+<div class="sc"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-casino-poker.webp" alt=""><div><h4 data-i="c3t">Póker</h4><p data-i="c3d">80+ variantes.</p></div></div>
+<div class="sc"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-casino-ruleta.webp" alt=""><div><h4 data-i="c4t">Ruleta</h4><p data-i="c4d">300 mesas.</p></div></div>
+<div class="sc"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-casino-en-vivo.webp" alt=""><div><h4 data-i="c5t">Casino en Vivo</h4><p data-i="c5d">760+ mesas HD.</p></div></div>
+<div class="sc"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-casino-1win-games.webp" alt=""><div><h4>1Win Games</h4><p data-i="c6d">15 exclusivos.</p></div></div>
+</div></div></section>
+
+<section><div class="w">
+<div class="cb"><div><h2 class="st" id="sst">Patrocinios</h2><p id="ssd">UEFA, UFC, WTA, FIBA, NHL, ATP Finals. Evoplay, Evolution, Spinomenal, Spribe, BGaming.</p></div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-patrocinar.webp" alt=""></div></div>
+<div class="cb rv"><div><h2 class="st" id="rgt">Juego Responsable</h2><div class="fl"><div><div class="d"></div><span data-i="rg1">Prohibición menores 18</span></div><div><div class="d"></div><span data-i="rg2">Límites depósitos/tiempo</span></div><div><div class="d"></div><span data-i="rg3">Autoexclusión</span></div><div><div class="d"></div><span data-i="rg4">Apoyo adicción</span></div></div></div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-juego-responsable.webp" alt=""></div></div>
+<div class="cb"><div><h2 class="st" id="aft">Afiliados</h2><p id="afd" style="margin-bottom:18px">30M+ usuarios, 100K+ socios.</p><div class="ag"><div class="ac"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v12M8 10l4-4 4 4M9 14h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div><h4 data-i="af1t">RevShare y CPA</h4><p data-i="af1d">Modelos flexibles</p></div></div><div class="ac"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 16v-4M10 16v-6M13 16v-3M16 16v-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div><h4 data-i="af2t">Stats en Tiempo Real</h4><p data-i="af2d">Rastrea rendimiento</p></div></div><div class="ac"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20M12 2c3 3.6 3 14.4 0 20M12 2c-3 3.6-3 14.4 0 20" stroke="currentColor" stroke-width="1.5"/></svg></div><div><h4 data-i="af3t">Soporte Global</h4><p data-i="af3d">Asistencia mundial</p></div></div><div class="ac"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><h4 data-i="af4t">Pago Diario</h4><p data-i="af4d">Cobros diarios</p></div></div></div></div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-afiliados.webp" alt=""></div></div>
+<div class="cb rv"><div><h2 class="st" id="let">¿Legal en Perú?</h2><p id="led">Licencia 8048/JAZ 2018-040 de Curazao permite operar sin restricciones en Perú.</p></div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-legal.webp" alt=""></div></div>
+<div class="cb"><div><h2 class="st" id="set">Seguridad</h2><div class="fl"><div><div class="d"></div><span data-i="sc1">SSL 256-bit</span></div><div><div class="d"></div><span data-i="sc2">Licencia Curazao</span></div><div><div class="d"></div><span data-i="sc3">2FA</span></div><div><div class="d"></div><span data-i="sc4">Monitoreo transacciones</span></div><div><div class="d"></div><span data-i="sc5">Protección datos</span></div></div></div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-seguridad.webp" alt=""></div></div>
+<div class="cb rv"><div><h2 class="st" id="cnt">Contactos</h2><div class="fl"><div><div class="d"></div><span data-i="co1">Chat 24/7</span></div><div><div class="d"></div><span>support@1win.xyz</span></div><div><div class="d"></div><span data-i="co3">Teléfono</span></div></div></div><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-contactos.webp" alt=""></div></div>
+</div></section>
+
+<section><div class="w"><h2 class="st">FAQ</h2>
+<div class="fi"><div class="fq" onclick="tF(this)"><span data-i="fq1q">¿Es 1Win legal en Perú?</span><span class="ar">▼</span></div><div class="fa"><div class="fa-in" data-i="fq1a">Sí, licencia 8048/JAZ 2018-040 de Curazao.</div></div></div>
+<div class="fi"><div class="fq" onclick="tF(this)"><span data-i="fq2q">¿Qué deportes hay?</span><span class="ar">▼</span></div><div class="fa"><div class="fa-in" data-i="fq2a">Fútbol, baloncesto, tenis, voleibol, hockey, eSports y más.</div></div></div>
+<div class="fi"><div class="fq" onclick="tF(this)"><span data-i="fq3q">¿Qué bonos hay?</span><span class="ar">▼</span></div><div class="fa"><div class="fa-in" data-i="fq3a">500% bienvenida, 30% cashback, 200 Coins por app.</div></div></div>
+<div class="fi"><div class="fq" onclick="tF(this)"><span data-i="fq4q">¿Puedo apostar con PEN?</span><span class="ar">▼</span></div><div class="fa"><div class="fa-in" data-i="fq4a">Sí, soles peruanos aceptados.</div></div></div>
+<div class="fi"><div class="fq" onclick="tF(this)"><span data-i="fq5q">¿Programa de afiliados?</span><span class="ar">▼</span></div><div class="fa"><div class="fa-in" data-i="fq5a">Sí, RevShare/CPA, stats, pagos diarios.</div></div></div>
+<div class="fi"><div class="fq" onclick="tF(this)"><span data-i="fq6q">¿Proveedores casino?</span><span class="ar">▼</span></div><div class="fa"><div class="fa-in" data-i="fq6a">150+: NetEnt, Microgaming, Evolution, Pragmatic Play.</div></div></div>
+<div class="fi"><div class="fq" onclick="tF(this)"><span data-i="fq7q">¿App móvil?</span><span class="ar">▼</span></div><div class="fa"><div class="fa-in" data-i="fq7a">Sí, iOS y Android.</div></div></div>
+</div></section>
+
+<footer class="ft"><div class="w"><div class="fg"><div><img src="https://1winperu.pro/wp-content/uploads/2025/05/logo.webp" alt="1Win" style="height:36px;margin-bottom:14px"><p style="font-size:13px;color:var(--t2);max-width:280px" id="fd">Plataforma líder en Perú desde 2016.</p><br><a href="https://lkxw.cc/0b297f" target="_blank" class="b ba" style="padding:8px 18px;font-size:12px;margin-right:8px">Android</a><a href="https://lkxw.cc/0b297f" target="_blank" class="b bo" style="padding:8px 18px;font-size:12px">iOS</a></div><div><h5 id="fg1">Info General</h5><a href="https://lkxw.cc/0b297f" target="_blank" data-i="fa">Sobre 1Win</a><a href="https://lkxw.cc/0b297f" target="_blank" data-i="nc">Contactos</a><a href="https://lkxw.cc/0b297f" target="_blank" data-i="fp">Afiliados</a></div><div><h5 id="fg2">Legal</h5><a href="https://lkxw.cc/0b297f" target="_blank" data-i="ftm">Términos</a><a href="https://lkxw.cc/0b297f" target="_blank" data-i="fpr">Privacidad</a><a href="https://lkxw.cc/0b297f" target="_blank" data-i="frg">Juego Responsable</a></div><div><h5 id="fg3">Contacto</h5><a href="mailto:support@1win.xyz">support@1win.xyz</a><a href="mailto:security@1win.xyz">security@1win.xyz</a><a href="mailto:partners@1win.xyz">partners@1win.xyz</a></div></div><div class="fb"><span>1Win Peru © 2026</span><span id="fr">Todos los derechos reservados</span></div></div></footer>
+
+<script>
+const D={bc:["CREAR CUENTA","CREATE ACCOUNT"],bd:["DESCARGAR APP","DOWNLOAD APP"],br:["REGÍSTRATE EN 1WIN","REGISTER AT 1WIN"],nr:["Registro","Registration"],nb:["Bonos","Bonus"],nl:["Casino en Vivo","Live Casino"],nq:["Juegos Rápidos","Quick Games"],ns:["Deportes","Sports"],np:["Depósito y Retiro","Deposit & Withdrawal"],nc:["Contactos","Contacts"],ty:["Año de Fundación","Year Founded"],tl:["Licencia","Licence"],to:["Propietario","Owner"],ti:["Idiomas","Languages"],tiv:["Español, Inglés, Alemán y más","Spanish, English, German and more"],tp:["Perú","Peru"],tpv:["Sí","Yes"],ts:["Servicios","Services"],tsv:["Apuestas, casino, juegos en vivo, póker","Betting, casino, live games, poker"],tw:["Bono","Bonus"],twv:["500% en 4 depósitos hasta 7.200 PEN","500% on 4 deposits up to 7,200 PEN"],tc:["Monedas","Currencies"],tav:["Android e iOS","Android and iOS"],tm:["Pagos","Payments"],tmv:["Tarjetas, Yape, cripto, transferencias","Cards, Yape, crypto, transfers"],td:["Dep. Mín.","Min. Deposit"],tr:["Ret. Mín.","Min. Withdrawal"],tu:["Soporte","Support"],tuv:["Chat, email, teléfono 24/7","Chat, email, phone 24/7"],b1t:["Apps Gratuitas","Free Apps"],b1d:["iOS y Android.","iOS and Android."],b2t:["Juegos con Licencia","Licensed Games"],b2d:["150+ proveedores.","150+ providers."],b3t:["Oferta Deportiva","Sports Offer"],b3d:["10.000+ eventos.","10,000+ events."],b4t:["Juegos Exclusivos","Exclusive Games"],b4d:["Solo en 1Win.","Only at 1Win."],b5t:["Interfaz Optimizada","Optimized Interface"],b5d:["Rápida y multidispositivo.","Fast and multi-device."],b6t:["Bono Progresivo","Progressive Bonus"],b6d:["+500% en 4 depósitos.","+500% on 4 deposits."],bnc1:["Bono","Bonus"],bnc2:["Descripción","Description"],bn1n:["500% primer depósito","500% first deposit"],bn1d:["Hasta 500% en 4 depósitos, máx 7.200 PEN.","Up to 500% on 4 deposits, max 7,200 PEN."],bn2n:["30% Cashback","30% Cashback"],bn2d:["Semanal en slots, sábados.","Weekly on slots, Saturdays."],bn3n:["Bono app","App bonus"],bn3d:["200 1Win Coins.","200 1Win Coins."],bn4n:["Multi apuesta","Multi bet"],bn4d:["Extra en parlays 5+.","Extra on 5+ parlays."],r1:['Clic "Registrarse".','Click "Register".'],r2:["Redes o formulario.","Social or form."],r3:["Completa datos.","Fill details."],r4:["Acepta términos.","Accept terms."],r5:['Clic "Crear cuenta".','Click "Create account".'],v1:["DNI o pasaporte.","ID or passport."],v2:["Ve a verificación.","Go to verification."],v3:["Sube documentos.","Upload documents."],v4:["Hasta 72h.","Up to 72h."],l1:['Clic "Iniciar sesión".','Click "Log in".'],l2:["Correo y contraseña.","Email and password."],l3:["Accede y juega.","Access and play."],dm:["Depósito","Deposit"],wm:["Retiro","Withdrawal"],d1:['Clic "Depositar".','Click "Deposit".'],d2:["Elige método.","Choose method."],d3:["Ingresa monto.","Enter amount."],d4:["Confirma.","Confirm."],w1:["Inicia sesión.","Log in."],w2:['Clic "Retirar".','Click "Withdraw".'],w3:["Elige método.","Choose method."],w4:["Confirma monto.","Confirm amount."],a1:['"App Android".','Select "Android App".'],a2:["Descarga APK.","Download APK."],a3:["Fuentes desconocidas.","Unknown sources."],a4:["Instala.","Install."],i1:["Compartir Safari.","Share in Safari."],i2:['"Agregar a Inicio".','Add to Home Screen.'],i3:["Nombre: 1Win Perú.","Name: 1Win Peru."],i4:["Agregar.","Add."],sp1t:["Fútbol","Football"],sp1d:["150+ ligas.","150+ leagues."],sp2t:["Baloncesto","Basketball"],sp2d:["90+ ligas.","90+ leagues."],sp3t:["Voleibol","Volleyball"],sp3d:["60+ ligas.","60+ leagues."],sp4t:["Tenis","Tennis"],sp4d:["Grand Slam, ATP, WTA.","Grand Slam, ATP, WTA."],sp5d:["CS2, Dota 2, LoL.","CS2, Dota 2, LoL."],sp6t:["Virtuales","Virtual"],sp6d:["40+ ligas.","40+ leagues."],bt1t:["Simple","Single"],bt1d:["Monto × cuota.","Amount × odds."],bt2d:["Todas aciertan.","All must win."],bt3t:["Serie","Series"],bt3d:["Independientes.","Independent."],hb1t:["Registrarse","Register"],hb1d:["Crea cuenta.","Create account."],hb2t:["Depositar","Deposit"],hb2d:["Elige método.","Choose method."],hb3t:["Explorar","Explore"],hb3d:["Revisa cuotas.","Check odds."],hb4t:["Elegir","Choose"],hb4d:["Deporte y monto.","Sport and amount."],hb5t:["Confirmar","Confirm"],hb5d:["Hacer apuesta.","Place bet."],od1t:["Decimal","Decimal"],od1d:["Más usado en Perú.","Most used in Peru."],od2t:["Americano","American"],od2d:["Positivo/negativo.","Positive/negative."],od3t:["Fraccional","Fractional"],od3d:["Común en UK.","Common in UK."],c1t:["Juegos Rápidos","Quick Games"],c1d:["Aviator, JetX, Lucky Jet.","Aviator, JetX, Lucky Jet."],c2t:["Tragamonedas","Slots"],c2d:["10.000+ juegos.","10,000+ games."],c3t:["Póker","Poker"],c3d:["80+ variantes.","80+ variants."],c4t:["Ruleta","Roulette"],c4d:["300 mesas.","300 tables."],c5t:["Casino en Vivo","Live Casino"],c5d:["760+ mesas HD.","760+ HD tables."],c6d:["15 exclusivos.","15 exclusives."],rg1:["No menores 18","No minors under 18"],rg2:["Límites","Limits"],rg3:["Autoexclusión","Self-exclusion"],rg4:["Apoyo adicción","Addiction support"],af1t:["RevShare y CPA","RevShare & CPA"],af1d:["Modelos flexibles","Flexible models"],af2t:["Stats en Tiempo Real","Real-time Stats"],af2d:["Rastrea rendimiento","Track performance"],af3t:["Soporte Global","Global Support"],af3d:["Asistencia mundial","Worldwide assistance"],af4t:["Pago Diario","Daily Payment"],af4d:["Cobros diarios","Daily payouts"],sc1:["SSL 256-bit","SSL 256-bit"],sc2:["Licencia Curazao","Curacao License"],sc3:["2FA","2FA"],sc4:["Monitoreo transacciones","Transaction monitoring"],sc5:["Protección datos","Data protection"],co1:["Chat 24/7","Chat 24/7"],co3:["Teléfono","Phone"],fa:["Sobre 1Win","About 1Win"],fp:["Afiliados","Affiliates"],ftm:["Términos","Terms"],fpr:["Privacidad","Privacy"],frg:["Juego Responsable","Responsible Gaming"],fq1q:["¿Es legal?","Is it legal?"],fq1a:["Sí, licencia Curazao.","Yes, Curacao license."],fq2q:["¿Deportes?","Sports?"],fq2a:["Fútbol, baloncesto, tenis y más.","Football, basketball, tennis and more."],fq3q:["¿Bonos?","Bonuses?"],fq3a:["500%, 30% cashback, 200 Coins.","500%, 30% cashback, 200 Coins."],fq4q:["¿PEN?","PEN?"],fq4a:["Sí.","Yes."],fq5q:["¿Afiliados?","Affiliates?"],fq5a:["Sí, RevShare/CPA.","Yes, RevShare/CPA."],fq6q:["¿Proveedores?","Providers?"],fq6a:["150+: NetEnt, Evolution...","150+: NetEnt, Evolution..."],fq7q:["¿App?","App?"],fq7a:["iOS y Android.","iOS and Android."]};
+const I={ht:["Bono 1Win Perú — Sitio Oficial","1Win Peru Bonus — Official Site"],hd:["Bono de bienvenida 1Win Perú: hasta 500% en 4 depósitos (máximo S/ 7.200). Cashback 30% semanal en slots, 200 1Win Coins por descargar la app, bonos multi apuesta y códigos promocionales exclusivos.","1Win Peru welcome bonus: up to 500% on 4 deposits (max S/ 7,200). 30% weekly cashback on slots, 200 1Win Coins for app download, multi-bet bonuses and exclusive promo codes."],bn:["500% Bono de Bienvenida hasta S/ 7.200","500% Welcome Bonus up to S/ 7,200"],ov:["Resumen de 1Win","1Win Overview"],od:["1Win: plataforma global desde 2016, 10.400+ juegos, licencia Curazao.","1Win: global platform since 2016, 10,400+ games, Curacao license."],lt:["Licencia","Licence"],ld2:["Opera bajo licencia 8048/JAZ 2018-040 de Curazao.","Operates under license 8048/JAZ 2018-040 from Curacao."],ht2:["Historia","History"],hd2:["Desde 2016, deportes, casino, juegos en vivo y funciones exclusivas.","Since 2016, sports, casino, live games and exclusive features."],at:["Embajador","Ambassador"],ad:['David Warner, embajador global desde julio 2024.',"David Warner, global ambassador since July 2024."],bt:["Beneficios Peruanos","Peru Benefits"],bd2:["Características optimizadas para jugadores locales.","Features optimized for local players."],bnt:["Bonos en Perú","Peru Bonuses"],rt:["¿Cómo Registrarse?","How to Register?"],rd:["Proceso simple, acceso inmediato.","Simple process, immediate access."],vt:["Verificación","Verification"],lgt:["Inicio de Sesión","Login"],pt:["Código Promo","Promo Code"],pd:["Alfanumérico para bonos extra. En redes sociales 1Win.","Alphanumeric for extra bonuses. On 1Win social media."],pyt:["Métodos de Pago","Payment Methods"],dpt:["¿Cómo Depositar?","How to Deposit?"],wdt:["¿Cómo Retirar?","How to Withdraw?"],mat:["Apps Móviles","Mobile Apps"],spt:["Deportes en 1Win","Sports at 1Win"],lvt:["Apuestas en Vivo","Live Betting"],lvd:["Cuotas en tiempo real.","Real-time odds."],bst:["Cupón de Apuestas","Bet Slip"],hbt:["¿Cómo Apostar?","How to Bet?"],odt:["Cuotas","Odds"],ct:["Casino Online","Online Casino"],cd:["13.000+ juegos de proveedores top.","13,000+ games from top providers."],sst:["Patrocinios","Sponsorship"],ssd:["UEFA, UFC, WTA, FIBA, NHL.","UEFA, UFC, WTA, FIBA, NHL."],rgt:["Juego Responsable","Responsible Gaming"],aft:["Afiliados","Affiliates"],afd:["30M+ usuarios, 100K+ socios.","30M+ users, 100K+ partners."],let:["¿Legal en Perú?","Legal in Peru?"],led:["Licencia Curazao permite operar.","Curacao license allows operation."],set:["Seguridad","Security"],cnt:["Contactos","Contacts"],fd:["Líder en Perú desde 2016.","Peru leader since 2016."],fg1:["Info General","General Info"],fg2:["Legal","Legal"],fg3:["Contacto","Contact"],fr:["Todos los derechos reservados","All rights reserved"]};
+let L=0;
+function sL(l){L=l==='en'?1:0;document.getElementById('cl').textContent=l.toUpperCase();document.getElementById('lf').src=l==='en'?'https://flagcdn.com/w40/gb.png':'https://flagcdn.com/w40/es.png';document.querySelectorAll('.ld').forEach(d=>d.classList.remove('sh'));document.querySelectorAll('[data-i]').forEach(e=>{const k=e.getAttribute('data-i');if(D[k])e.textContent=D[k][L]});Object.keys(I).forEach(id=>{const e=document.getElementById(id);if(e)e.innerHTML=I[id][L]});document.documentElement.lang=l}
+function tF(e){const i=e.parentElement,a=i.querySelector('.fa'),o=i.classList.contains('on');document.querySelectorAll('.fi').forEach(x=>{x.classList.remove('on');x.querySelector('.fa').style.maxHeight='0'});if(!o){i.classList.add('on');a.style.maxHeight=a.scrollHeight+'px'}}
+window.addEventListener('scroll',()=>{document.getElementById('up').classList.toggle('v',scrollY>600)});
+document.addEventListener('click',e=>{if(!e.target.closest('.ls'))document.querySelectorAll('.ld').forEach(d=>d.classList.remove('sh'))});
+</script></body></html>
