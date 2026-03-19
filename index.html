@@ -1,212 +1,1081 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CasinoBono Perú 2026 - Mejores Bonos de Casino</title>
-    <meta name="description" content="Los mejores bonos de casino en Perú 2026. Códigos 1win, bonos sin depósito y promociones exclusivas para jugadores peruanos.">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background: #0a0a0f; color: white; font-family: "Poppins", sans-serif; overflow-x: hidden; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1Win Peru – Online Casino and Sports Betting Website</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23131729'/%3E%3Ctext x='3' y='23' font-family='Arial,sans-serif' font-weight='900' font-size='14' fill='%23ffffff'%3E1w%3C/text%3E%3Ccircle cx='25' cy='10' r='5' fill='%23ff7a00'/%3E%3C/svg%3E">
+<link rel="shortcut icon" href="https://1winperu.pro/wp-content/uploads/2025/05/cropped-1win-favicon-32x32.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #131729;
+  --bg-secondary: #1a1f36;
+  --bg-card: #1e2440;
+  --bg-card-hover: #252d4a;
+  --accent: #ff7a00;
+  --accent-light: #ff9633;
+  --accent-dark: #e06800;
+  --accent-glow: rgba(255, 122, 0, 0.12);
+  --accent-btn: #ff7a00;
+  --text-primary: #eaedf5;
+  --text-secondary: #9aa0b8;
+  --text-muted: #6b7089;
+  --border: rgba(255,255,255,0.07);
+  --radius: 14px;
+  --radius-sm: 8px;
+  --shadow: 0 4px 32px rgba(0,0,0,0.4);
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family:'Open Sans',sans-serif;
+  background:var(--bg-primary);
+  color:var(--text-primary);
+  line-height:1.7;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4,h5 { font-family:'Montserrat',sans-serif; font-weight:700; line-height:1.3; }
+a { text-decoration:none; color:var(--accent); transition:var(--transition); }
+a:hover { color:var(--accent-light); }
+img { max-width:100%; height:auto; display:block; }
+.container { max-width:1240px; margin:0 auto; padding:0 24px; }
 
-        .hero {
-            min-height: 100vh;
-            background: radial-gradient(ellipse at top, #1a0533 0%, #0a0a0f 70%);
-            display: flex; flex-direction: column; align-items: center; justify-content: center;
-            text-align: center; padding: 120px 20px 60px; position: relative; overflow: hidden;
-        }
-        .hero::before {
-            content: ""; position: absolute; width: 600px; height: 600px;
-            background: radial-gradient(circle, rgba(249,144,0,0.15) 0%, transparent 70%);
-            top: 50%; left: 50%; transform: translate(-50%, -50%);
-            animation: pulse 3s ease-in-out infinite;
-        }
-        @keyframes pulse { 0%,100% { transform: translate(-50%,-50%) scale(1); } 50% { transform: translate(-50%,-50%) scale(1.2); } }
+/* ===== STICKY HEADER ===== */
+.top-header {
+  position:fixed; top:0; left:0; right:0; z-index:1000;
+  background:rgba(19,23,41,0.97);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
+}
+.header-top {
+  display:flex; flex-direction:column; align-items:center;
+  padding:14px 24px 0;
+}
+.logo-img {
+  height:42px; margin-bottom:10px; cursor:pointer;
+}
+.header-btns {
+  display:flex; gap:12px; margin-bottom:12px;
+}
+.btn {
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:11px 28px; border-radius:var(--radius-sm);
+  font-family:'Montserrat',sans-serif;
+  font-weight:700; font-size:13px; letter-spacing:0.5px;
+  cursor:pointer; border:none; transition:var(--transition);
+  text-transform:uppercase; white-space:nowrap;
+}
+.btn-accent {
+  background:linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color:#fff;
+  box-shadow:0 4px 20px rgba(255,122,0,0.35);
+}
+.btn-accent:hover {
+  background:linear-gradient(135deg, var(--accent-light), var(--accent));
+  transform:translateY(-1px);
+  box-shadow:0 6px 28px rgba(255,122,0,0.45);
+  color:#fff;
+}
+.btn-outline-accent {
+  background:transparent; color:var(--accent);
+  border:2px solid var(--accent);
+}
+.btn-outline-accent:hover {
+  background:var(--accent); color:#fff;
+}
 
-        .badge {
-            background: linear-gradient(90deg, #f90, #ff4500);
-            color: black; font-weight: 700; padding: 8px 20px;
-            border-radius: 50px; font-size: 0.85em; margin-bottom: 20px;
-            animation: glow 2s ease-in-out infinite; z-index: 1;
-        }
-        @keyframes glow { 0%,100% { box-shadow: 0 0 10px #f90; } 50% { box-shadow: 0 0 30px #f90, 0 0 60px #f90; } }
+/* NAV */
+.nav-bar {
+  display:flex; align-items:center; justify-content:center; gap:0;
+  padding:0 24px 10px;
+  flex-wrap:wrap;
+}
+.nav-bar a {
+  color:var(--text-secondary); font-size:13px; font-weight:600;
+  padding:6px 14px; border-radius:var(--radius-sm);
+  transition:var(--transition); font-family:'Montserrat',sans-serif;
+}
+.nav-bar a:hover { color:var(--accent); background:var(--accent-glow); }
 
-        .hero h1 { font-size: clamp(2.5em, 6vw, 5em); font-weight: 900; line-height: 1.1; margin-bottom: 20px; z-index: 1; }
-        .hero h1 span { background: linear-gradient(90deg, #f90, #ff4500); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero p { font-size: 1.2em; color: #aaa; max-width: 600px; margin-bottom: 40px; z-index: 1; }
+.lang-switch {
+  display:inline-flex; align-items:center; gap:6px;
+  cursor:pointer; position:relative;
+  padding:5px 12px; border-radius:var(--radius-sm);
+  border:1px solid var(--border); background:var(--bg-secondary);
+  font-size:13px; font-weight:600; color:var(--text-primary);
+  font-family:'Montserrat',sans-serif; margin-left:8px;
+}
+.lang-switch:hover { border-color:var(--accent); }
+.lang-dd {
+  display:none; position:absolute; top:110%; right:0;
+  background:var(--bg-card); border:1px solid var(--border);
+  border-radius:var(--radius-sm); overflow:hidden;
+  box-shadow:var(--shadow); min-width:110px; z-index:50;
+}
+.lang-dd.show { display:block; }
+.lang-dd span {
+  display:block; padding:8px 16px; font-size:13px;
+  color:var(--text-primary); cursor:pointer; transition:var(--transition);
+}
+.lang-dd span:hover { background:var(--accent); color:#fff; }
 
-        .cta-btn {
-            background: linear-gradient(90deg, #f90, #ff4500);
-            color: black; font-weight: 900; font-size: 1.3em;
-            padding: 20px 50px; border-radius: 50px; text-decoration: none;
-            display: inline-block; z-index: 1; position: relative;
-            transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 10px 40px rgba(249,144,0,0.4);
-        }
-        .cta-btn:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 20px 60px rgba(249,144,0,0.6); }
+/* Hamburger */
+.hamburger {
+  display:none; flex-direction:column; gap:5px;
+  cursor:pointer; padding:4px; position:absolute; right:24px; top:22px;
+}
+.hamburger span { display:block; width:24px; height:2px; background:var(--text-primary); border-radius:2px; }
+.mobile-nav {
+  display:none; position:fixed; top:0; left:0; right:0; bottom:0;
+  background:var(--bg-primary); z-index:9999;
+  padding:80px 24px 24px; overflow-y:auto; flex-direction:column; gap:4px;
+}
+.mobile-nav.open { display:flex; }
+.mobile-nav a {
+  display:block; color:var(--text-secondary); font-size:16px; font-weight:600;
+  padding:14px 16px; border-radius:var(--radius-sm); font-family:'Montserrat',sans-serif;
+}
+.mobile-nav a:hover { color:var(--accent); background:var(--accent-glow); }
+.mobile-close {
+  position:absolute; top:20px; right:24px; font-size:28px;
+  color:var(--text-primary); cursor:pointer; background:none; border:none;
+}
 
-        .stats { display: flex; gap: 40px; margin-top: 50px; z-index: 1; flex-wrap: wrap; justify-content: center; }
-        .stat { text-align: center; }
-        .stat strong { font-size: 2em; font-weight: 900; color: #f90; display: block; }
-        .stat span { color: #888; font-size: 0.85em; }
+/* ===== SCROLL TOP ===== */
+.scroll-top {
+  position:fixed; bottom:28px; right:28px; z-index:900;
+  width:48px; height:48px; border-radius:50%;
+  background:var(--accent); color:#fff;
+  display:none; align-items:center; justify-content:center;
+  font-size:22px; cursor:pointer; border:none;
+  box-shadow:0 4px 16px rgba(255,122,0,0.4);
+  transition:var(--transition);
+}
+.scroll-top:hover { background:var(--accent-light); transform:translateY(-2px); }
+.scroll-top.vis { display:flex; }
 
-        .features { padding: 80px 20px; max-width: 1100px; margin: 0 auto; }
-        .section-title { text-align: center; font-size: 2.2em; font-weight: 900; margin-bottom: 50px; }
-        .section-title span { color: #f90; }
+/* ===== HERO ===== */
+.hero {
+  margin-top:130px;
+  padding:60px 0 50px;
+  position:relative; overflow:hidden;
+  background:linear-gradient(135deg, var(--bg-primary) 0%, #1c1840 50%, var(--bg-primary) 100%);
+}
+.hero::after {
+  content:''; position:absolute; top:-40%; right:-20%;
+  width:900px; height:900px;
+  background:radial-gradient(circle, rgba(255,122,0,0.06) 0%, transparent 70%);
+  pointer-events:none;
+}
+.hero-grid {
+  display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;
+}
+.hero h1 { font-size:38px; font-weight:800; margin-bottom:20px; }
+.hero p { font-size:15px; color:var(--text-secondary); margin-bottom:24px; line-height:1.8; }
+.hero-bonus-box {
+  display:flex; align-items:center; gap:14px;
+  background:var(--accent-glow); border:1px solid rgba(255,122,0,0.25);
+  border-radius:var(--radius); padding:16px 24px; margin-bottom:24px;
+}
+.hero-bonus-box .gift { flex-shrink:0; }
+.hero-bonus-box .txt { font-family:'Montserrat',sans-serif; font-weight:700; font-size:17px; }
+.hero-img-wrap { position:relative; }
+.hero-img-wrap img { border-radius:0; width:100%; }
 
-        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .feature-card {
-            background: linear-gradient(135deg, #1a1a2e, #16213e);
-            border: 1px solid rgba(249,144,0,0.2); border-radius: 20px;
-            padding: 30px; transition: transform 0.3s, border-color 0.3s;
-        }
-        .feature-card:hover { transform: translateY(-5px); border-color: #f90; }
-        .feature-icon { font-size: 2.5em; margin-bottom: 15px; }
-        .feature-card h3 { font-size: 1.2em; margin-bottom: 10px; }
-        .feature-card p { color: #888; font-size: 0.9em; line-height: 1.6; }
+/* ===== SECTIONS ===== */
+section { padding:56px 0; }
+.stitle { font-size:30px; margin-bottom:12px; }
+.sdesc { font-size:15px; color:var(--text-secondary); margin-bottom:36px; max-width:750px; }
 
-        .pages-section { background: #0d0d1a; padding: 80px 20px; }
-        .pages-inner { max-width: 1100px; margin: 0 auto; }
-        .pages-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px; margin-top: 40px; }
-        .page-card {
-            background: #141428; border: 1px solid #222; border-radius: 15px;
-            padding: 20px 25px; text-decoration: none; color: white;
-            transition: all 0.3s; display: flex; align-items: center; gap: 15px;
-        }
-        .page-card:hover { background: #1e1e3a; border-color: #f90; transform: translateX(5px); }
-        .page-card .icon { font-size: 1.5em; }
-        .page-card .text strong { display: block; font-size: 0.95em; }
-        .page-card .text span { color: #666; font-size: 0.8em; }
-        .page-card .arrow { margin-left: auto; color: #f90; font-size: 1.2em; }
+/* ===== TABLE ===== */
+.itable {
+  width:100%; border-collapse:collapse;
+  background:var(--bg-card); border-radius:var(--radius); overflow:hidden;
+  border:1px solid var(--border);
+}
+.itable tr { border-bottom:1px solid var(--border); }
+.itable tr:last-child { border-bottom:none; }
+.itable td { padding:13px 20px; font-size:14px; }
+.itable td:first-child {
+  font-weight:600; color:var(--accent); width:35%;
+  background:rgba(255,122,0,0.04); font-family:'Montserrat',sans-serif;
+}
+.itable td:last-child { color:var(--text-secondary); }
 
-        .bottom-cta {
-            padding: 100px 20px; text-align: center;
-            background: radial-gradient(ellipse at center, #1a0533 0%, #0a0a0f 70%);
-        }
-        .bottom-cta h2 { font-size: 2.5em; font-weight: 900; margin-bottom: 20px; }
-        .bottom-cta p { color: #aaa; margin-bottom: 40px; font-size: 1.1em; }
+/* ===== CONTENT BLOCK (text + image) ===== */
+.cblock {
+  display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;
+  margin-bottom:48px;
+}
+.cblock.rev { direction:rtl; }
+.cblock.rev > * { direction:ltr; }
+.cblock h3 { font-size:24px; margin-bottom:14px; }
+.cblock p, .cblock .steps-list { font-size:15px; color:var(--text-secondary); }
+.cblock img { border-radius:var(--radius); width:100%; }
 
-        footer { background: #070710; padding: 30px; text-align: center; color: #444; font-size: 0.85em; border-top: 1px solid #1a1a2e; }
+/* ===== BENEFITS GRID ===== */
+.ben-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.ben-card {
+  background:var(--bg-card); border:1px solid var(--border);
+  border-radius:var(--radius); padding:30px 22px; text-align:center;
+  transition:var(--transition);
+}
+.ben-card:hover { border-color:var(--accent); transform:translateY(-4px); box-shadow:0 8px 32px rgba(255,122,0,0.08); }
+.ben-card img { width:90px; height:90px; margin:0 auto 18px; border-radius:12px; object-fit:cover; }
+.ben-card h4 { font-size:16px; margin-bottom:8px; }
+.ben-card p { font-size:13px; color:var(--text-secondary); }
 
-        nav {
-            position: fixed; top: 0; width: 100%; z-index: 100;
-            background: rgba(10,10,15,0.9); backdrop-filter: blur(10px);
-            padding: 15px 30px; display: flex; justify-content: space-between; align-items: center;
-            border-bottom: 1px solid rgba(249,144,0,0.1);
-        }
-        .logo { font-weight: 900; font-size: 1.3em; }
-        .logo span { color: #f90; }
-        .nav-btn {
-            background: linear-gradient(90deg, #f90, #ff4500);
-            color: black; font-weight: 700; padding: 10px 25px;
-            border-radius: 50px; text-decoration: none; font-size: 0.9em;
-        }
-    </style>
+/* ===== BONUS TABLE ===== */
+.btable {
+  width:100%; border-collapse:collapse;
+  background:var(--bg-card); border-radius:var(--radius); overflow:hidden;
+  border:1px solid var(--border);
+}
+.btable th {
+  background:linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color:#fff; padding:14px 20px; font-family:'Montserrat',sans-serif;
+  font-size:14px; text-align:left;
+}
+.btable td {
+  padding:14px 20px; font-size:14px;
+  border-bottom:1px solid var(--border); color:var(--text-secondary);
+}
+.btable td:first-child { font-weight:600; color:var(--text-primary); font-family:'Montserrat',sans-serif; }
+.btable tr:last-child td { border-bottom:none; }
+
+/* ===== STEPS ===== */
+.steps-list { display:flex; flex-direction:column; gap:10px; }
+.step-i {
+  display:flex; gap:16px; align-items:flex-start;
+  font-size:14px; color:var(--text-secondary); line-height:1.7;
+}
+.step-i .num {
+  flex-shrink:0; width:32px; height:32px;
+  background:linear-gradient(135deg, var(--accent), var(--accent-dark));
+  border-radius:50%; display:flex; align-items:center; justify-content:center;
+  font-family:'Montserrat',sans-serif; font-weight:800; font-size:14px; color:#fff;
+  margin-top:2px;
+}
+
+/* ===== SPORTS / CASINO GRID ===== */
+.sgrid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.scard {
+  background:var(--bg-card); border:1px solid var(--border);
+  border-radius:var(--radius); overflow:hidden; transition:var(--transition);
+}
+.scard:hover { border-color:var(--accent); transform:translateY(-4px); box-shadow:0 8px 32px rgba(255,122,0,0.08); }
+.scard img { width:100%; height:180px; object-fit:cover; }
+.scard-body { padding:18px; }
+.scard h4 { font-size:17px; margin-bottom:6px; }
+.scard p { font-size:13px; color:var(--text-secondary); }
+
+/* ===== BET TYPES / ODDS ===== */
+.tgrid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.tcard {
+  background:var(--bg-card); border:1px solid var(--border);
+  border-radius:var(--radius); padding:24px 20px; transition:var(--transition);
+}
+.tcard:hover { border-color:var(--accent); }
+.tcard h4 { font-size:17px; margin-bottom:8px; color:var(--accent); }
+.tcard p { font-size:14px; color:var(--text-secondary); }
+
+/* ===== HOW TO BET STEPS ===== */
+.hgrid { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; }
+.hstep {
+  background:var(--bg-card); border:1px solid var(--border);
+  border-radius:var(--radius); padding:22px 14px; text-align:center;
+  transition:var(--transition);
+}
+.hstep:hover { border-color:var(--accent); }
+.hstep .n {
+  display:inline-flex; align-items:center; justify-content:center;
+  width:38px; height:38px;
+  background:linear-gradient(135deg, var(--accent), var(--accent-dark));
+  border-radius:50%; font-family:'Montserrat',sans-serif;
+  font-weight:800; font-size:15px; color:#fff; margin-bottom:12px;
+}
+.hstep h4 { font-size:14px; margin-bottom:6px; }
+.hstep p { font-size:12px; color:var(--text-secondary); }
+
+/* ===== FEATURE LIST ===== */
+.flist { display:flex; flex-direction:column; gap:10px; }
+.flist-i { display:flex; align-items:flex-start; gap:12px; font-size:14px; color:var(--text-secondary); }
+.flist-i .dot { flex-shrink:0; width:8px; height:8px; background:var(--accent); border-radius:50%; margin-top:7px; }
+
+/* ===== AFFILIATE ===== */
+.aff-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+.aff-card {
+  display:flex; align-items:flex-start; gap:14px;
+  background:var(--bg-card); border:1px solid var(--border);
+  border-radius:var(--radius); padding:18px;
+}
+.aff-card .ic {
+  flex-shrink:0; width:40px; height:40px;
+  background:var(--accent-glow); border:1px solid rgba(255,122,0,0.3);
+  border-radius:50%; display:flex; align-items:center; justify-content:center;
+  color:var(--accent); font-size:18px; line-height:0;
+}
+.aff-card h4 { font-size:14px; margin-bottom:3px; }
+.aff-card p { font-size:13px; color:var(--text-secondary); }
+
+/* ===== FAQ ===== */
+.faq-i {
+  background:var(--bg-card); border:1px solid var(--border);
+  border-radius:var(--radius); margin-bottom:10px; overflow:hidden;
+}
+.faq-q {
+  padding:16px 22px; font-family:'Montserrat',sans-serif;
+  font-weight:600; font-size:15px; cursor:pointer;
+  display:flex; align-items:center; justify-content:space-between;
+  transition:var(--transition);
+}
+.faq-q:hover { color:var(--accent); }
+.faq-q .arr { font-size:18px; color:var(--accent); transition:var(--transition); }
+.faq-i.on .arr { transform:rotate(180deg); }
+.faq-a { max-height:0; overflow:hidden; transition:max-height 0.4s ease; }
+.faq-a-in { padding:0 22px 16px; font-size:14px; color:var(--text-secondary); }
+
+/* ===== FOOTER ===== */
+.footer {
+  background:var(--bg-secondary); border-top:1px solid var(--border);
+  padding:48px 0 24px;
+}
+.footer-grid { display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr; gap:36px; margin-bottom:36px; }
+.footer h5 { font-size:13px; color:var(--accent); margin-bottom:14px; text-transform:uppercase; letter-spacing:1px; }
+.footer a { display:block; color:var(--text-secondary); font-size:13px; margin-bottom:8px; }
+.footer a:hover { color:var(--accent); }
+.footer-bot {
+  border-top:1px solid var(--border); padding-top:20px;
+  display:flex; align-items:center; justify-content:space-between;
+  font-size:12px; color:var(--text-muted);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1024px) {
+  .nav-bar { display:none; }
+  .hamburger { display:flex; }
+  .hero-grid { grid-template-columns:1fr; }
+  .hero-img-wrap { max-width:500px; margin:0 auto; }
+  .cblock { grid-template-columns:1fr; }
+  .cblock.rev { direction:ltr; }
+  .ben-grid { grid-template-columns:repeat(2,1fr); }
+  .sgrid { grid-template-columns:repeat(2,1fr); }
+  .tgrid { grid-template-columns:1fr; }
+  .hgrid { grid-template-columns:repeat(3,1fr); }
+  .aff-grid { grid-template-columns:1fr; }
+  .footer-grid { grid-template-columns:repeat(2,1fr); }
+}
+@media(max-width:640px) {
+  .hero { margin-top:120px; padding:40px 0 30px; }
+  .hero h1 { font-size:26px; }
+  .stitle { font-size:22px; }
+  .ben-grid { grid-template-columns:1fr; }
+  .sgrid { grid-template-columns:1fr; }
+  .hgrid { grid-template-columns:1fr; }
+  .footer-grid { grid-template-columns:1fr; }
+  .footer-bot { flex-direction:column; gap:10px; text-align:center; }
+  .header-btns .btn { padding:9px 18px; font-size:12px; }
+}
+</style>
 </head>
 <body>
 
-<nav>
-    <div class="logo">Casino<span>Bono</span> Perú</div>
-    <a class="nav-btn" href="https://lkxw.cc/0b297f">🎰 Jugar Ahora</a>
-</nav>
+<!-- ===== HEADER ===== -->
+<div class="top-header">
+  <div class="header-top">
+    <img src="https://1winperu.pro/wp-content/uploads/2025/05/logo.webp" alt="1Win" class="logo-img" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <div class="header-btns">
+      <a href="https://lkxw.cc/0b297f" target="_blank" class="btn btn-accent" data-i18n="btn_create">CREATE ACCOUNT</a>
+      <a href="https://lkxw.cc/0b297f" target="_blank" class="btn btn-outline-accent" data-i18n="btn_download">DOWNLOAD APP</a>
+    </div>
+    <div class="hamburger" id="hamb" onclick="document.getElementById('mnav').classList.add('open')">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <nav class="nav-bar">
+    <a href="#" data-i18n="nav_app">App</a>
+    <a href="#" data-i18n="nav_reg">Registration</a>
+    <a href="#" data-i18n="nav_bonus">Bonus</a>
+    <a href="#" data-i18n="nav_casino">Casino</a>
+    <a href="#" data-i18n="nav_live">Live Casino</a>
+    <a href="#" data-i18n="nav_quick">Quick Games</a>
+    <a href="#" data-i18n="nav_sports">Deportes</a>
+    <a href="#" data-i18n="nav_esports">eSports</a>
+    <a href="#" data-i18n="nav_payments">Deposit and Withdrawal</a>
+    <a href="#" data-i18n="nav_contacts">Contacts</a>
+    <div class="lang-switch" onclick="toggleDD()">
+      <img id="clang-flag" src="https://flagcdn.com/w40/gb.png" alt="" style="width:20px;height:14px;border-radius:2px;object-fit:cover;">
+      <span id="clang">EN</span> ▾
+      <div class="lang-dd" id="ldd">
+        <span onclick="setLang('en')"><img src="https://flagcdn.com/w40/gb.png" alt="" style="width:18px;height:13px;border-radius:2px;object-fit:cover;vertical-align:middle;margin-right:8px;">English</span>
+        <span onclick="setLang('es')"><img src="https://flagcdn.com/w40/es.png" alt="" style="width:18px;height:13px;border-radius:2px;object-fit:cover;vertical-align:middle;margin-right:8px;">Español</span>
+      </div>
+    </div>
+  </nav>
+</div>
 
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mnav">
+  <button class="mobile-close" onclick="document.getElementById('mnav').classList.remove('open')">✕</button>
+  <a href="#" data-i18n="nav_app">App</a>
+  <a href="#" data-i18n="nav_reg">Registration</a>
+  <a href="#" data-i18n="nav_bonus">Bonus</a>
+  <a href="#" data-i18n="nav_casino">Casino</a>
+  <a href="#" data-i18n="nav_live">Live Casino</a>
+  <a href="#" data-i18n="nav_quick">Quick Games</a>
+  <a href="#" data-i18n="nav_sports">Deportes</a>
+  <a href="#" data-i18n="nav_esports">eSports</a>
+  <a href="#" data-i18n="nav_payments">Deposit and Withdrawal</a>
+  <a href="#" data-i18n="nav_contacts">Contacts</a>
+  <br>
+  <a href="https://lkxw.cc/0b297f" target="_blank" class="btn btn-accent" style="text-align:center;" data-i18n="btn_create">CREATE ACCOUNT</a>
+</div>
+
+<!-- Scroll top -->
+<button class="scroll-top" id="sctop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<!-- ===== HERO ===== -->
 <section class="hero">
-    <div class="badge">🔥 PROMOCIÓN ACTIVA MARZO 2026</div>
-    <h1>Los Mejores Bonos<br>de Casino en <span>Perú</span></h1>
-    <p>Consigue hasta $700 de bono de bienvenida en 1win. Códigos exclusivos, guías y promociones para jugadores peruanos.</p>
-    <a class="cta-btn" href="https://lkxw.cc/0b297f">🎁 ¡RECLAMAR BONO $700 AHORA!</a>
-    <div class="stats">
-        <div class="stat"><strong>$700</strong><span>Bono máximo</span></div>
-        <div class="stat"><strong>500%</strong><span>Primer depósito</span></div>
-        <div class="stat"><strong>9.000+</strong><span>Juegos disponibles</span></div>
-        <div class="stat"><strong>24/7</strong><span>Soporte en español</span></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <h1 data-i18n="hero_title">1Win Peru – Online Casino and Sports Betting Website</h1>
+        <p data-i18n="hero_desc">1Win Peru has been a legal online bookmaker since 2016, operating under license 8048/JAZ 2018-040 granted by the government of Curacao. On our site, you will have access to more than 10,000 daily sporting events along with a catalog of more than 10,400 casino games. The 1Win platform stands out for its functional design, market coverage and secure payment methods. Use our welcome bonus of up to 7,200 PEN on your first four deposits with 500%.</p>
+        <div class="hero-bonus-box">
+          <div class="gift"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="8" fill="#2563eb"/><path d="M18 12v14M11 16h14M13 12c0-1.7 1.3-3 3-3s3 1.3 3 3M17 12c0-1.7 1.3-3 3-3s3 1.3 3 3M11 16v8a2 2 0 002 2h10a2 2 0 002-2v-8H11z" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="11" y="13" width="14" height="5" rx="1" stroke="#fff" stroke-width="1.8"/></svg></div>
+          <div class="txt" data-i18n="hero_bonus">500% Welcome Bonus up to S/ 7.200</div>
+        </div>
+        <a href="https://lkxw.cc/0b297f" target="_blank" class="btn btn-accent" style="padding:14px 36px;font-size:14px;" data-i18n="btn_register">REGISTER AT 1WIN</a>
+      </div>
+      <div class="hero-img-wrap">
+        <img src="https://1winperu.pro/wp-content/uploads/2025/05/1win-principal-cabecera.webp" alt="1Win Peru">
+      </div>
     </div>
+  </div>
 </section>
 
-<section class="features">
-    <h2 class="section-title">¿Por qué <span>1win Perú</span>?</h2>
-    <div class="features-grid">
-        <div class="feature-card">
-            <div class="feature-icon">💰</div>
-            <h3>Bono 500% hasta $700</h3>
-            <p>El mejor bono de bienvenida del mercado peruano. Multiplica tu primer depósito por 5.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">📱</div>
-            <h3>App Móvil Gratis</h3>
-            <p>Descarga la app para iOS y Android. Juega desde cualquier lugar del Perú.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">💳</div>
-            <h3>Yape, Plin y BCP</h3>
-            <p>Depósitos y retiros con los métodos de pago más populares en Perú.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">⚽</div>
-            <h3>Apuestas Deportivas</h3>
-            <p>Liga 1, Copa Libertadores, Champions League. Apuesta en tiempo real.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">🎰</div>
-            <h3>9.000+ Slots</h3>
-            <p>Los mejores juegos de los proveedores más reconocidos del mundo.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">🛡️</div>
-            <h3>Casino Seguro y Legal</h3>
-            <p>Licencia internacional, transacciones cifradas y retiros garantizados.</p>
-        </div>
+<!-- ===== OVERVIEW ===== -->
+<section>
+  <div class="container">
+    <h2 class="stitle" data-i18n="ov_title">1Win Overview</h2>
+    <p class="sdesc" data-i18n="ov_desc">1Win is a global online gambling platform operated by NextGen Development Labs Ltd. Since launch in 2016, we have positioned ourselves as a trusted brand within the iGaming sector, focused on offering a comprehensive sports betting and casino gaming experience with over 10,400 games.</p>
+    <table class="itable">
+      <tr><td data-i18n="t_year">Year of Foundation</td><td>2016</td></tr>
+      <tr><td data-i18n="t_lic">Licence</td><td>8048/JAZ 2018-040 (Government of Curacao)</td></tr>
+      <tr><td data-i18n="t_owner">Owner</td><td>NextGen Development Labs Ltd</td></tr>
+      <tr><td data-i18n="t_lang">Available Languages</td><td data-i18n="t_lang_v">Spanish, English, German, Arabic, Chinese, Korean, among others</td></tr>
+      <tr><td data-i18n="t_peru">Availability in Peru</td><td data-i18n="t_yes">Yes</td></tr>
+      <tr><td data-i18n="t_serv">Services</td><td data-i18n="t_serv_v">Sports betting, online casino, live games, poker, and more</td></tr>
+      <tr><td data-i18n="t_bonus">Welcome Bonus</td><td data-i18n="t_bonus_v">500% on first 4 deposits up to 7,200 PEN</td></tr>
+      <tr><td data-i18n="t_cur">Available Currencies</td><td>PEN, CLP, CAD, INR, BTC and more</td></tr>
+      <tr><td data-i18n="t_app">App</td><td data-i18n="t_app_v">Yes, available for Android and iOS</td></tr>
+      <tr><td data-i18n="t_pay">Payment Methods</td><td data-i18n="t_pay_v">Bank cards, e-wallets, bank transfers, and cryptocurrencies</td></tr>
+      <tr><td data-i18n="t_mindep">Minimum Deposit</td><td>5 PEN</td></tr>
+      <tr><td data-i18n="t_minwd">Minimum Withdrawal</td><td>15 PEN</td></tr>
+      <tr><td data-i18n="t_sup">Support Service</td><td data-i18n="t_sup_v">Email, phone, live chat</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ===== LICENCE ===== -->
+<section>
+  <div class="container">
+    <div class="cblock">
+      <div>
+        <h3 data-i18n="lic_t">Licence</h3>
+        <p data-i18n="lic_d">1Win 2026 operates legally in Peru under an international licence issued by the government of Curacao. The authorisation number is 8048/JAZ 2018-040, and guarantees that the platform complies with international regulatory standards on responsible gambling and data protection. Such accreditation allows our users in Peruvian territory to gamble online with total security, knowing that they are interacting with a regulated bookmaker.</p>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-licencia-internacional.webp" alt="Licence"></div>
     </div>
-</section>
-
-<section class="pages-section">
-    <div class="pages-inner">
-        <h2 class="section-title">Guías y <span>Recursos</span></h2>
-        <div class="pages-grid">
-            <a class="page-card" href="1win-slots-peru-jugar.html">
-                <span class="icon">🎰</span>
-                <div class="text"><strong>1win Slots Perú Jugar</strong><span>Guía completa de slots</span></div>
-                <span class="arrow">→</span>
-            </a>
-            <a class="page-card" href="codigo-1win-peru-2026.html">
-                <span class="icon">🎁</span>
-                <div class="text"><strong>Código 1win Perú 2026</strong><span>Códigos promocionales</span></div>
-                <span class="arrow">→</span>
-            </a>
-            <a class="page-card" href="bono-bienvenida-1win-peru.html">
-                <span class="icon">💰</span>
-                <div class="text"><strong>Bono Bienvenida 1win</strong><span>500% hasta $700</span></div>
-                <span class="arrow">→</span>
-            </a>
-            <a class="page-card" href="1win-apuestas-deportivas-peru.html">
-                <span class="icon">⚽</span>
-                <div class="text"><strong>Apuestas Deportivas</strong><span>Liga 1 y más</span></div>
-                <span class="arrow">→</span>
-            </a>
-            <a class="page-card" href="1win-registro-peru.html">
-                <span class="icon">📝</span>
-                <div class="text"><strong>Registro en 1win</strong><span>Cómo crear cuenta</span></div>
-                <span class="arrow">→</span>
-            </a>
-            <a class="page-card" href="1win-app-peru-descargar.html">
-                <span class="icon">📱</span>
-                <div class="text"><strong>App 1win Perú</strong><span>Descarga gratis</span></div>
-                <span class="arrow">→</span>
-            </a>
-        </div>
+    <div class="cblock rev">
+      <div>
+        <h3 data-i18n="hist_t">History</h3>
+        <p data-i18n="hist_d">The 1Win story began in 2016, with our aim to establish a solid platform in the global online gambling market. Since then, we have evolved with a diversified proposition that encompasses sports, casino, live games, and exclusive features for registered users. Our constant development has allowed us to gain presence in important markets, including Peru, with localised solutions and an efficient digital infrastructure.</p>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-la-historia.webp" alt="History"></div>
     </div>
+    <div class="cblock">
+      <div>
+        <h3 data-i18n="amb_t">Brand Ambassador</h3>
+        <p data-i18n="amb_d">In July 2024, David Warner was announced as 1Win's global ambassador, just after he retired from international cricket. His addition brought strategic visibility to our brand and solidified its presence in new markets. Warner not only represents 1Win in advertising campaigns but has also led social impact actions. In November 2024, 1Win and Warner jointly launched the "1Win 1000 Hits" charity campaign.</p>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-embajador-global.webp" alt="Brand Ambassador"></div>
+    </div>
+  </div>
 </section>
 
-<section class="bottom-cta">
-    <h2>¿Listo para ganar? 🏆</h2>
-    <p>Únete a miles de jugadores peruanos y reclama tu bono hoy</p>
-    <a class="cta-btn" href="https://lkxw.cc/0b297f">🎰 ¡OBTENER BONO $700 GRATIS!</a>
+<!-- ===== BENEFITS ===== -->
+<section>
+  <div class="container">
+    <h2 class="stitle" data-i18n="ben_t">1Win Benefits for Peruvian Players</h2>
+    <p class="sdesc" data-i18n="ben_d">1Win Peru's platform integrates several features that optimise the online betting and gaming experience for the local user. These are the main benefits we offer:</p>
+    <div class="ben-grid">
+      <div class="ben-card">
+        <img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-beneficios-aplicaciones.webp" alt="">
+        <h4 data-i18n="b1t">Free Mobile Apps</h4>
+        <p data-i18n="b1d">Available for iOS and Android, responsive design, and fluid navigation.</p>
+      </div>
+      <div class="ben-card">
+        <img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-beneficios-juegos-con-licencia.webp" alt="">
+        <h4 data-i18n="b2t">Licensed Games</h4>
+        <p data-i18n="b2d">Slots, poker, crash and live dealer titles from over 150 international providers.</p>
+      </div>
+      <div class="ben-card">
+        <img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-beneficios-oferta-deportiva.webp" alt="">
+        <h4 data-i18n="b3t">Extensive Sports Offer</h4>
+        <p data-i18n="b3d">Over 10,000 daily events with competitive odds, multiple markets and live streaming.</p>
+      </div>
+      <div class="ben-card">
+        <img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-beneficios-juegos-exclusivos.webp" alt="">
+        <h4 data-i18n="b4t">Exclusive Games</h4>
+        <p data-i18n="b4d">Titles developed by 1Win are available only within our platform.</p>
+      </div>
+      <div class="ben-card">
+        <img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-beneficios-interfaz.webp" alt="">
+        <h4 data-i18n="b5t">Optimized Interface</h4>
+        <p data-i18n="b5d">Clear structure, fast loading and multi-device compatibility.</p>
+      </div>
+      <div class="ben-card">
+        <img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-beneficios-bonificacion.webp" alt="">
+        <h4 data-i18n="b6t">Progressive Bonus</h4>
+        <p data-i18n="b6d">Welcome bonus of up to +500% distributed on the first four deposits.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<footer>
-    <p>© 2026 CasinoBono Perú. Solo para mayores de 18 años. Juega con responsabilidad.</p>
+<!-- ===== BONUS OFFERS ===== -->
+<section>
+  <div class="container">
+    <h2 class="stitle" data-i18n="bon_t">1Win Bonus Offers in Peru</h2>
+    <table class="btable">
+      <thead><tr><th data-i18n="bon_c1">Bonus</th><th data-i18n="bon_c2">Description</th></tr></thead>
+      <tbody>
+        <tr><td data-i18n="bo1n">500% bonus on first deposit</td><td data-i18n="bo1d">Receive up to 500% on your first 4 deposits up to 7,200 PEN. The bonus is credited automatically after every reload and transferred to your main account after wagering.</td></tr>
+        <tr><td data-i18n="bo2n">30% cashback</td><td data-i18n="bo2d">Get a 30% cashback on your weekly losses on games in the slots category. Cashback is credited on Saturdays with no additional wagering required.</td></tr>
+        <tr><td data-i18n="bo3n">Bonus for downloading the app</td><td data-i18n="bo3d">Receive 200 1Win Coins when you download the app. These coins can be exchanged for real money.</td></tr>
+        <tr><td data-i18n="bo4n">Multi bet bonus</td><td data-i18n="bo4d">Increase your winnings on multi bets. If you bet on 5 or more events in a parlay, you can earn an extra percentage.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ===== REGISTRATION ===== -->
+<section>
+  <div class="container">
+    <div class="cblock">
+      <div>
+        <h2 class="stitle" data-i18n="reg_t">How to Register on 1Win Website?</h2>
+        <p style="color:var(--text-secondary);font-size:15px;margin-bottom:18px;" data-i18n="reg_intro">Registering with 1Win platform is a simple process that allows immediate access to all our online betting and gaming services available in Peru. Here is a step-by-step guide:</p>
+        <div class="steps-list">
+          <div class="step-i"><div class="num">1</div><span data-i18n="r1">Click on "Register": Locate the button at the top of the 1Win official site.</span></div>
+          <div class="step-i"><div class="num">2</div><span data-i18n="r2">Select your registration method: You can use social media or fill in a quick form with your email and phone number.</span></div>
+          <div class="step-i"><div class="num">3</div><span data-i18n="r3">Fill in the required fields: Enter the basic data requested depending on the method you have chosen.</span></div>
+          <div class="step-i"><div class="num">4</div><span data-i18n="r4">Accept our terms: Check that the details are correct, accept the terms and conditions and enter a promotional code if you have one.</span></div>
+          <div class="step-i"><div class="num">5</div><span data-i18n="r5">Confirm your account: Click on "Create account" to complete the process and activate access to your profile.</span></div>
+        </div>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-como-registrarte.webp" alt="Register"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VERIFICATION ===== -->
+<section>
+  <div class="container">
+    <div class="cblock rev">
+      <div>
+        <h2 class="stitle" data-i18n="ver_t">1Win Account Verification</h2>
+        <div class="steps-list">
+          <div class="step-i"><div class="num">1</div><span data-i18n="v1">Prepare your documents: Have your identity document (ID card, passport or driver's licence) and proof of address ready.</span></div>
+          <div class="step-i"><div class="num">2</div><span data-i18n="v2">Log in to your profile: Go to the verification section and follow the instructions.</span></div>
+          <div class="step-i"><div class="num">3</div><span data-i18n="v3">Upload the required documents: Upload the files securely directly from the 1Win platform.</span></div>
+          <div class="step-i"><div class="num">4</div><span data-i18n="v4">Wait for validation: The review can take up to 72 hours. Once completed, all features are activated.</span></div>
+        </div>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-verificacion-de-cuenta.webp" alt="Verification"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOGIN ===== -->
+<section>
+  <div class="container">
+    <div class="cblock">
+      <div>
+        <h2 class="stitle" data-i18n="log_t">1Win Login Guide</h2>
+        <div class="steps-list">
+          <div class="step-i"><div class="num">1</div><span data-i18n="l1">Click on "Log in": The button is located in the top right corner.</span></div>
+          <div class="step-i"><div class="num">2</div><span data-i18n="l2">Enter your credentials: Enter your email and password. Click on the login button.</span></div>
+          <div class="step-i"><div class="num">3</div><span data-i18n="l3">Access your account: Once inside, you can start placing bets, playing or managing your profile.</span></div>
+        </div>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-inicio-de-sesion.webp" alt="Login"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROMO CODE ===== -->
+<section>
+  <div class="container">
+    <div class="cblock rev">
+      <div>
+        <h2 class="stitle" data-i18n="promo_t">Use 1Win Promo Code</h2>
+        <p data-i18n="promo_d">The 1Win promo code is an alphanumeric combination that, when activated, allows players to receive extra money. The most common way to obtain a code is through the bookmaker's social networks. Free codes of different amounts are regularly published on them.</p>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-codigo-promo.webp" alt="Promo Code"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PAYMENT METHODS ===== -->
+<section>
+  <div class="container">
+    <h2 class="stitle" data-i18n="pay_t">Payment Methods at 1Win</h2>
+    <table class="itable" style="margin-bottom:40px;">
+      <tr><td data-i18n="dep_m">Deposit Methods</td><td>Yape, Payvalida, bank transfer, Kashio, Visa, MasterCard, BBVA, Tambo, cash, Airtm, cryptocurrencies</td></tr>
+      <tr><td data-i18n="wd_m">Withdrawal Methods</td><td>Bank transfer, Airtm, cryptocurrencies</td></tr>
+    </table>
+
+    <div class="cblock">
+      <div>
+        <h3 data-i18n="hdep_t">How to Deposit?</h3>
+        <div class="steps-list">
+          <div class="step-i"><div class="num">1</div><span data-i18n="d1">Click on "Make a deposit" at the top of the 1Win screen.</span></div>
+          <div class="step-i"><div class="num">2</div><span data-i18n="d2">Choose your preferred payment method from those available for Peru.</span></div>
+          <div class="step-i"><div class="num">3</div><span data-i18n="d3">Specify the amount you wish to deposit within the limits indicated.</span></div>
+          <div class="step-i"><div class="num">4</div><span data-i18n="d4">Confirm the transaction by following the instructions and clicking on "Top Up".</span></div>
+        </div>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-como-depositar.webp" alt="Deposit"></div>
+    </div>
+
+    <div class="cblock rev">
+      <div>
+        <h3 data-i18n="hwd_t">How to Withdraw?</h3>
+        <div class="steps-list">
+          <div class="step-i"><div class="num">1</div><span data-i18n="w1">Log in to your account from the 1Win official website and go to the profile menu.</span></div>
+          <div class="step-i"><div class="num">2</div><span data-i18n="w2">Click on the "Withdraw" option.</span></div>
+          <div class="step-i"><div class="num">3</div><span data-i18n="w3">Select your preferred withdrawal method.</span></div>
+          <div class="step-i"><div class="num">4</div><span data-i18n="w4">Enter the amount you wish to withdraw, respecting the minimum. Confirm the operation.</span></div>
+        </div>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-como-retirar.webp" alt="Withdraw"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MOBILE APPS ===== -->
+<section>
+  <div class="container">
+    <h2 class="stitle" data-i18n="mapp_t">1Win Mobile Apps</h2>
+    <p class="sdesc" data-i18n="mapp_d">1Win offers an app optimised for Android as well as a responsive web version for iOS devices. Both allow fast and secure access to all functions.</p>
+    <div class="cblock">
+      <div>
+        <h3>Android</h3>
+        <div class="steps-list">
+          <div class="step-i"><div class="num">1</div><span data-i18n="a1">Scroll to the bottom of the page and select "Android App".</span></div>
+          <div class="step-i"><div class="num">2</div><span data-i18n="a2">Download the APK file from the link provided.</span></div>
+          <div class="step-i"><div class="num">3</div><span data-i18n="a3">Enable "Install from unknown sources" in your device settings.</span></div>
+          <div class="step-i"><div class="num">4</div><span data-i18n="a4">Start the installation by clicking on the downloaded file.</span></div>
+        </div>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-app-android.webp" alt="Android"></div>
+    </div>
+    <div class="cblock rev">
+      <div>
+        <h3>iOS</h3>
+        <div class="steps-list">
+          <div class="step-i"><div class="num">1</div><span data-i18n="i1">Tap the share icon at the bottom of the browser.</span></div>
+          <div class="step-i"><div class="num">2</div><span data-i18n="i2">Select "Add to Home Screen".</span></div>
+          <div class="step-i"><div class="num">3</div><span data-i18n="i3">Assign a name, such as "1Win Peru".</span></div>
+          <div class="step-i"><div class="num">4</div><span data-i18n="i4">Tap "Add" to save the shortcut to your home screen.</span></div>
+        </div>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-app-ios.webp" alt="iOS"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SPORTS ===== -->
+<section>
+  <div class="container">
+    <h2 class="stitle" data-i18n="sp_t">Types of Sports at 1Win</h2>
+    <p class="sdesc" data-i18n="sp_d">The sports category at 1Win is one of the most comprehensive. From live events to pre-match betting, our platform offers an accessible experience for both novice and expert bettors.</p>
+    <div class="sgrid">
+      <div class="scard"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-deportes-futbol.webp" alt=""><div class="scard-body"><h4 data-i18n="sp1t">Football</h4><p data-i18n="sp1d">Over 150 active leagues including Premier League, La Liga, and Serie A.</p></div></div>
+      <div class="scard"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-deportes-basquet.webp" alt=""><div class="scard-body"><h4 data-i18n="sp2t">Basketball</h4><p data-i18n="sp2d">More than 90 leagues from NBA to Euroleague and ACB League.</p></div></div>
+      <div class="scard"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-deportes-voleibol.webp" alt=""><div class="scard-body"><h4 data-i18n="sp3t">Volleyball</h4><p data-i18n="sp3d">More than 60 men's and women's leagues with international tournaments.</p></div></div>
+      <div class="scard"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-deportes-tenis.webp" alt=""><div class="scard-body"><h4 data-i18n="sp4t">Tennis</h4><p data-i18n="sp4d">Over 70 tournaments including Grand Slam, ATP Tour, and WTA Tour.</p></div></div>
+      <div class="scard"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-deportes-esports.webp" alt=""><div class="scard-body"><h4>eSports</h4><p data-i18n="sp5d">Over 80 active games including CS2, Dota 2, and League of Legends.</p></div></div>
+      <div class="scard"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-deportes-virtuales.webp" alt=""><div class="scard-body"><h4 data-i18n="sp6t">Virtual Sports</h4><p data-i18n="sp6d">More than 40 leagues simulating real-life matches with immediate results.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LIVE BETTING ===== -->
+<section>
+  <div class="container">
+    <div class="cblock">
+      <div>
+        <h2 class="stitle" data-i18n="lb_t">Live Betting at 1Win</h2>
+        <p data-i18n="lb_d">This category was created for users who wish to bet while sporting events are in progress. The odds change in real time depending on what is happening in the match, allowing you to take advantage of decisive moments to maximise your winnings. Sports available: football, basketball, tennis, table tennis, ice hockey, horse racing, eSports, virtual sports, and many more.</p>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-apuestas-vivo.webp" alt="Live Betting"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BET SLIP ===== -->
+<section>
+  <div class="container">
+    <div class="cblock">
+      <div>
+        <h2 class="stitle" data-i18n="bs_t">Bet Slip</h2>
+        <div class="tgrid" style="margin-top:16px;">
+          <div class="tcard"><h4 data-i18n="bt1t">Single</h4><p data-i18n="bt1d">A bet on a single outcome in an event. Winnings = amount bet × odds offered.</p></div>
+          <div class="tcard"><h4>Express</h4><p data-i18n="bt2d">A combination of several bets on different events. All must be successful to win.</p></div>
+          <div class="tcard"><h4 data-i18n="bt3t">Series</h4><p data-i18n="bt3d">Multiple single bets on different events, with the same predetermined amount for each.</p></div>
+        </div>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-apuestas-tipos.webp" alt="Bet Slip"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW TO BET ===== -->
+<section>
+  <div class="container">
+    <h2 class="stitle" data-i18n="hb_t">How to Bet on 1Win?</h2>
+    <p class="sdesc" data-i18n="hb_d">Betting at 1Win is simple: explore available events, select your market, and decide how much to bet.</p>
+    <div class="hgrid">
+      <div class="hstep"><div class="n">1</div><h4 data-i18n="hb1t">Register</h4><p data-i18n="hb1d">Register or log in with your details.</p></div>
+      <div class="hstep"><div class="n">2</div><h4 data-i18n="hb2t">Deposit</h4><p data-i18n="hb2d">Choose method and enter the amount.</p></div>
+      <div class="hstep"><div class="n">3</div><h4 data-i18n="hb3t">Explore</h4><p data-i18n="hb3d">Check the odds and sports categories.</p></div>
+      <div class="hstep"><div class="n">4</div><h4 data-i18n="hb4t">Choose Bet</h4><p data-i18n="hb4d">Select sport, type and enter amount.</p></div>
+      <div class="hstep"><div class="n">5</div><h4 data-i18n="hb5t">Confirm</h4><p data-i18n="hb5d">Click "Place a Bet".</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ODDS ===== -->
+<section>
+  <div class="container">
+    <div class="cblock">
+      <div>
+        <h2 class="stitle" data-i18n="od_t">Odds Format</h2>
+        <div class="tgrid" style="grid-template-columns:1fr; margin-top:16px;">
+          <div class="tcard"><h4 data-i18n="od1t">Decimal</h4><p data-i18n="od1d">Most commonly used in Peru. Represents the total amount you would win for each unit wagered.</p></div>
+          <div class="tcard"><h4 data-i18n="od2t">American</h4><p data-i18n="od2d">Common in US betting markets, shown as a positive or negative number.</p></div>
+          <div class="tcard"><h4 data-i18n="od3t">Fractional</h4><p data-i18n="od3d">Common in the UK, indicates potential winnings in relation to the stake placed.</p></div>
+        </div>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-cuotas.webp" alt="Odds"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CASINO ===== -->
+<section>
+  <div class="container">
+    <h2 class="stitle" data-i18n="cas_t">Online Casino at 1Win</h2>
+    <p class="sdesc" data-i18n="cas_d">1Win online casino awaits you with over 13,000 games available. Titles from renowned providers such as NetEnt, Microgaming, Evolution Gaming, Play'n GO and Pragmatic Play.</p>
+    <div class="sgrid">
+      <div class="scard"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-casino-juegos-rapidos.webp" alt=""><div class="scard-body"><h4 data-i18n="c1t">Quick Games</h4><p data-i18n="c1d">Over 560 titles including Aviator, JetX, and Lucky Jet.</p></div></div>
+      <div class="scard"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-casino-tragamonedas.webp" alt=""><div class="scard-body"><h4 data-i18n="c2t">Slots</h4><p data-i18n="c2d">Over 10,000 games from leading software providers.</p></div></div>
+      <div class="scard"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-casino-poker.webp" alt=""><div class="scard-body"><h4 data-i18n="c3t">Poker</h4><p data-i18n="c3d">Over 80 game variants from classics to modern tournaments.</p></div></div>
+      <div class="scard"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-casino-ruleta.webp" alt=""><div class="scard-body"><h4 data-i18n="c4t">Roulette</h4><p data-i18n="c4d">300 tables available, both automated and live dealer.</p></div></div>
+      <div class="scard"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-casino-en-vivo.webp" alt=""><div class="scard-body"><h4 data-i18n="c5t">Live Casino</h4><p data-i18n="c5d">Over 760 tables with real dealers in HD.</p></div></div>
+      <div class="scard"><img src="https://1winperu.pro/wp-content/uploads/2025/10/principal-casino-1win-games.webp" alt=""><div class="scard-body"><h4>1Win Games</h4><p data-i18n="c6d">15 exclusive in-house titles with increasing multipliers.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SPONSORSHIP ===== -->
+<section>
+  <div class="container">
+    <div class="cblock">
+      <div>
+        <h2 class="stitle" data-i18n="spon_t">Sponsorship</h2>
+        <p data-i18n="spon_d">We have built a network of partnerships that supports our presence as a major player in the iGaming ecosystem. Our strategic partners include international sports entities such as UEFA, UFC, WTA, FIBA, NHL and the ATP Finals. 1Win also collaborates with leading software developers including Evoplay, Evolution, Spinomenal, Spribe, BGaming, 100HP Gaming, and Smartsoft.</p>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-patrocinar.webp" alt="Sponsorship"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESPONSIBLE GAMING ===== -->
+<section>
+  <div class="container">
+    <div class="cblock rev">
+      <div>
+        <h2 class="stitle" data-i18n="rg_t">Responsible Gaming Rules</h2>
+        <div class="flist">
+          <div class="flist-i"><div class="dot"></div><span data-i18n="rg1">Prohibition of participation by minors under 18 years of age</span></div>
+          <div class="flist-i"><div class="dot"></div><span data-i18n="rg2">Users can set limits on their deposits, bets and playing time</span></div>
+          <div class="flist-i"><div class="dot"></div><span data-i18n="rg3">Temporary or permanent self-exclusion</span></div>
+          <div class="flist-i"><div class="dot"></div><span data-i18n="rg4">Links to external organisations for specialist gambling addiction support</span></div>
+        </div>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-juego-responsable.webp" alt="Responsible Gaming"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AFFILIATE ===== -->
+<section>
+  <div class="container">
+    <div class="cblock">
+      <div>
+        <h2 class="stitle" data-i18n="aff_t">Affiliate Program</h2>
+        <p style="color:var(--text-secondary);font-size:15px;margin-bottom:18px;" data-i18n="aff_d">Our affiliate program is a unique opportunity to generate passive income. With over 30 million users and more than 100,000 partners.</p>
+        <div class="aff-grid">
+          <div class="aff-card"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v12M8 10l4-4 4 4M9 14h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div><h4 data-i18n="af1t">RevShare & CPA</h4><p data-i18n="af1d">Two flexible revenue models</p></div></div>
+          <div class="aff-card"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 16v-4M10 16v-6M13 16v-3M16 16v-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div><h4 data-i18n="af2t">Real-time Statistics</h4><p data-i18n="af2d">Track performance instantly</p></div></div>
+          <div class="aff-card"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20M12 2c3 3.6 3 14.4 0 20M12 2c-3 3.6-3 14.4 0 20" stroke="currentColor" stroke-width="1.5"/></svg></div><div><h4 data-i18n="af3t">Global Support</h4><p data-i18n="af3d">Localised assistance worldwide</p></div></div>
+          <div class="aff-card"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><h4 data-i18n="af4t">Daily Payment</h4><p data-i18n="af4d">Get paid every day</p></div></div>
+        </div>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-afiliados.webp" alt="Affiliate"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LEGAL ===== -->
+<section>
+  <div class="container">
+    <div class="cblock rev">
+      <div>
+        <h2 class="stitle" data-i18n="leg_t">Is 1Win Legal in Peru?</h2>
+        <p data-i18n="leg_d">1Win's operation in Peru is supported by licence number 8048/JAZ 2018-040, issued by the government of Curacao. This accreditation allows it to offer remote gambling services by international regulatory and control standards. In Peru, foreign platforms with an active international licence can operate without restrictions.</p>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-legal.webp" alt="Legal"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECURITY ===== -->
+<section>
+  <div class="container">
+    <div class="cblock">
+      <div>
+        <h2 class="stitle" data-i18n="sec_t">Safety and Security Measures</h2>
+        <div class="flist">
+          <div class="flist-i"><div class="dot"></div><span data-i18n="sc1">High-end SSL Data Encryption to protect personal and financial information</span></div>
+          <div class="flist-i"><div class="dot"></div><span data-i18n="sc2">Curacao International License</span></div>
+          <div class="flist-i"><div class="dot"></div><span data-i18n="sc3">Two-Factor Authentication (2FA) for an extra layer of security</span></div>
+          <div class="flist-i"><div class="dot"></div><span data-i18n="sc4">Transaction monitoring to detect suspicious activity</span></div>
+          <div class="flist-i"><div class="dot"></div><span data-i18n="sc5">Personal data protection regulations</span></div>
+        </div>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-seguridad.webp" alt="Security"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACTS ===== -->
+<section>
+  <div class="container">
+    <div class="cblock rev">
+      <div>
+        <h2 class="stitle" data-i18n="con_t">1Win Contacts</h2>
+        <div class="flist">
+          <div class="flist-i"><div class="dot"></div><span data-i18n="co1">Live chat — available 24/7</span></div>
+          <div class="flist-i"><div class="dot"></div><span>E-mail: support@1win.xyz</span></div>
+          <div class="flist-i"><div class="dot"></div><span data-i18n="co3">Phone support</span></div>
+        </div>
+      </div>
+      <div><img src="https://1winperu.pro/wp-content/uploads/2025/05/principal-contactos.webp" alt="Contacts"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section>
+  <div class="container">
+    <h2 class="stitle">FAQ</h2>
+    <div style="margin-top:24px;">
+      <div class="faq-i"><div class="faq-q" onclick="tFaq(this)"><span data-i18n="fq1q">Is 1Win legal in Peru?</span><span class="arr">▼</span></div><div class="faq-a"><div class="faq-a-in" data-i18n="fq1a">Yes, 1Win is a legal and operational online gaming and betting platform in Peru. Our company follows all local and international regulations.</div></div></div>
+      <div class="faq-i"><div class="faq-q" onclick="tFaq(this)"><span data-i18n="fq2q">What types of sports are available to bet on?</span><span class="arr">▼</span></div><div class="faq-a"><div class="faq-a-in" data-i18n="fq2a">Football, basketball, tennis, volleyball, ice hockey, motorsports, eSports, and more.</div></div></div>
+      <div class="faq-i"><div class="faq-q" onclick="tFaq(this)"><span data-i18n="fq3q">What bonuses are available?</span><span class="arr">▼</span></div><div class="faq-a"><div class="faq-a-in" data-i18n="fq3a">Welcome bonus up to 500% on the first deposit, ongoing promotions, cashback and loyalty programmes.</div></div></div>
+      <div class="faq-i"><div class="faq-q" onclick="tFaq(this)"><span data-i18n="fq4q">Can I bet with PEN?</span><span class="arr">▼</span></div><div class="faq-a"><div class="faq-a-in" data-i18n="fq4a">Yes, 1Win allows bets to be placed in Peruvian soles (PEN).</div></div></div>
+      <div class="faq-i"><div class="faq-q" onclick="tFaq(this)"><span data-i18n="fq5q">Does 1Win have an affiliate programme?</span><span class="arr">▼</span></div><div class="faq-a"><div class="faq-a-in" data-i18n="fq5a">Yes, with RevShare and CPA models, real-time stats, and daily payments.</div></div></div>
+      <div class="faq-i"><div class="faq-q" onclick="tFaq(this)"><span data-i18n="fq6q">Which casino providers work with 1Win?</span><span class="arr">▼</span></div><div class="faq-a"><div class="faq-a-in" data-i18n="fq6a">Over 150 providers including NetEnt, Microgaming, Evolution Gaming, Pragmatic Play, and Play'n GO.</div></div></div>
+      <div class="faq-i"><div class="faq-q" onclick="tFaq(this)"><span data-i18n="fq7q">Does 1Win offer a mobile app?</span><span class="arr">▼</span></div><div class="faq-a"><div class="faq-a-in" data-i18n="fq7a">Yes, mobile apps are available for both iOS and Android with full platform access.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="https://1winperu.pro/wp-content/uploads/2025/05/logo.webp" alt="1Win" style="height:36px;margin-bottom:14px;">
+        <p style="font-size:13px;color:var(--text-secondary);max-width:280px;margin-bottom:18px;" data-i18n="ft_desc">The leading online casino and sports betting platform in Peru since 2016.</p>
+        <a href="https://lkxw.cc/0b297f" target="_blank" class="btn btn-accent" style="padding:8px 18px;font-size:12px;margin-right:8px;">Android App</a>
+        <a href="https://lkxw.cc/0b297f" target="_blank" class="btn btn-outline-accent" style="padding:8px 18px;font-size:12px;">iOS App</a>
+      </div>
+      <div>
+        <h5 data-i18n="ft_gen">General Information</h5>
+        <a href="#" data-i18n="ft_about">About 1Win</a>
+        <a href="#" data-i18n="nav_contacts">Contacts</a>
+        <a href="#" data-i18n="ft_aff">Affiliate Program</a>
+      </div>
+      <div>
+        <h5 data-i18n="ft_leg">Legal Information</h5>
+        <a href="#" data-i18n="ft_terms">Terms and Conditions</a>
+        <a href="#" data-i18n="ft_priv">Privacy Policy</a>
+        <a href="#" data-i18n="ft_resp">Responsible Gaming</a>
+        <a href="#">KYC</a>
+      </div>
+      <div>
+        <h5 data-i18n="ft_contact">Contact Us</h5>
+        <a href="mailto:support@1win.xyz">support@1win.xyz</a>
+        <a href="mailto:security@1win.xyz">security@1win.xyz</a>
+        <a href="mailto:partners@1win.xyz">partners@1win.xyz</a>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <span>1Win Peru © 2026</span>
+      <span data-i18n="ft_rights">All rights reserved</span>
+    </div>
+  </div>
 </footer>
 
+<script>
+// ===== i18n =====
+const T={en:{
+btn_create:"CREATE ACCOUNT",btn_download:"DOWNLOAD APP",btn_register:"REGISTER AT 1WIN",
+nav_app:"App",nav_reg:"Registration",nav_bonus:"Bonus",nav_casino:"Casino",nav_live:"Live Casino",nav_quick:"Quick Games",nav_sports:"Deportes",nav_esports:"eSports",nav_payments:"Deposit and Withdrawal",nav_contacts:"Contacts",
+hero_title:"1Win Peru – Online Casino and Sports Betting Website",
+hero_desc:"1Win Peru has been a legal online bookmaker since 2016, operating under license 8048/JAZ 2018-040 granted by the government of Curacao. On our site, you will have access to more than 10,000 daily sporting events along with a catalog of more than 10,400 casino games. The 1Win platform stands out for its functional design, market coverage and secure payment methods. Use our welcome bonus of up to 7,200 PEN on your first four deposits with 500%.",
+hero_bonus:"500% Welcome Bonus up to S/ 7.200",
+ov_title:"1Win Overview",ov_desc:"1Win is a global online gambling platform operated by NextGen Development Labs Ltd. Since launch in 2016, we have positioned ourselves as a trusted brand within the iGaming sector, focused on offering a comprehensive sports betting and casino gaming experience with over 10,400 games.",
+t_year:"Year of Foundation",t_lic:"Licence",t_owner:"Owner",t_lang:"Available Languages",t_lang_v:"Spanish, English, German, Arabic, Chinese, Korean, among others",t_peru:"Availability in Peru",t_yes:"Yes",t_serv:"Services",t_serv_v:"Sports betting, online casino, live games, poker, and more",t_bonus:"Welcome Bonus",t_bonus_v:"500% on first 4 deposits up to 7,200 PEN",t_cur:"Available Currencies",t_app:"App",t_app_v:"Yes, available for Android and iOS",t_pay:"Payment Methods",t_pay_v:"Bank cards, e-wallets, bank transfers, and cryptocurrencies",t_mindep:"Minimum Deposit",t_minwd:"Minimum Withdrawal",t_sup:"Support Service",t_sup_v:"Email, phone, live chat",
+lic_t:"Licence",lic_d:"1Win 2026 operates legally in Peru under an international licence issued by the government of Curacao. The authorisation number is 8048/JAZ 2018-040, and guarantees that the platform complies with international regulatory standards on responsible gambling and data protection. Such accreditation allows our users in Peruvian territory to gamble online with total security, knowing that they are interacting with a regulated bookmaker.",
+hist_t:"History",hist_d:"The 1Win story began in 2016, with our aim to establish a solid platform in the global online gambling market. Since then, we have evolved with a diversified proposition that encompasses sports, casino, live games, and exclusive features for registered users. Our constant development has allowed us to gain presence in important markets, including Peru, with localised solutions and an efficient digital infrastructure.",
+amb_t:"Brand Ambassador",amb_d:'In July 2024, David Warner was announced as 1Win\'s global ambassador, just after he retired from international cricket. His addition brought strategic visibility to our brand and solidified its presence in new markets. In November 2024, 1Win and Warner jointly launched the "1Win 1000 Hits" charity campaign.',
+ben_t:"1Win Benefits for Peruvian Players",ben_d:"1Win Peru's platform integrates several features that optimise the online betting and gaming experience for the local user. These are the main benefits we offer:",
+b1t:"Free Mobile Apps",b1d:"Available for iOS and Android, responsive design, and fluid navigation.",b2t:"Licensed Games",b2d:"Slots, poker, crash and live dealer titles from over 150 international providers.",b3t:"Extensive Sports Offer",b3d:"Over 10,000 daily events with competitive odds, multiple markets and live streaming.",b4t:"Exclusive Games",b4d:"Titles developed by 1Win are available only within our platform.",b5t:"Optimized Interface",b5d:"Clear structure, fast loading and multi-device compatibility.",b6t:"Progressive Bonus",b6d:"Welcome bonus of up to +500% distributed on the first four deposits.",
+bon_t:"1Win Bonus Offers in Peru",bon_c1:"Bonus",bon_c2:"Description",
+bo1n:"500% bonus on first deposit",bo1d:"Receive up to 500% on your first 4 deposits up to 7,200 PEN. The bonus is credited automatically after every reload and transferred to your main account after wagering.",bo2n:"30% cashback",bo2d:"Get a 30% cashback on your weekly losses on games in the slots category. Cashback is credited on Saturdays with no additional wagering required.",bo3n:"Bonus for downloading the app",bo3d:"Receive 200 1Win Coins when you download the app. These coins can be exchanged for real money.",bo4n:"Multi bet bonus",bo4d:"Increase your winnings on multi bets. If you bet on 5 or more events in a parlay, you can earn an extra percentage.",
+reg_t:"How to Register on 1Win Website?",reg_intro:"Registering with 1Win platform is a simple process that allows immediate access to all our online betting and gaming services available in Peru. Here is a step-by-step guide:",
+r1:'Click on "Register": Locate the button at the top of the 1Win official site.',r2:"Select your registration method: You can use social media or fill in a quick form with your email and phone number.",r3:"Fill in the required fields: Enter the basic data requested depending on the method you have chosen.",r4:"Accept our terms: Check that the details are correct, accept the terms and conditions and enter a promotional code if you have one.",r5:'Confirm your account: Click on "Create account" to complete the process and activate access to your profile.',
+ver_t:"1Win Account Verification",v1:"Prepare your documents: Have your identity document (ID card, passport or driver's licence) and proof of address ready.",v2:"Log in to your profile: Go to the verification section and follow the instructions.",v3:"Upload the required documents: Upload the files securely directly from the 1Win platform.",v4:"Wait for validation: The review can take up to 72 hours. Once completed, all features are activated.",
+log_t:"1Win Login Guide",l1:'Click on "Log in": The button is located in the top right corner.',l2:"Enter your credentials: Enter your email and password. Click on the login button.",l3:"Access your account: Once inside, you can start placing bets, playing or managing your profile.",
+promo_t:"Use 1Win Promo Code",promo_d:"The 1Win promo code is an alphanumeric combination that, when activated, allows players to receive extra money. The most common way to obtain a code is through the bookmaker's social networks. Free codes of different amounts are regularly published on them.",
+pay_t:"Payment Methods at 1Win",dep_m:"Deposit Methods",wd_m:"Withdrawal Methods",
+hdep_t:"How to Deposit?",d1:'Click on "Make a deposit" at the top of the 1Win screen.',d2:"Choose your preferred payment method from those available for Peru.",d3:"Specify the amount you wish to deposit within the limits indicated.",d4:'Confirm the transaction by following the instructions and clicking on "Top Up".',
+hwd_t:"How to Withdraw?",w1:"Log in to your account from the 1Win official website and go to the profile menu.",w2:'Click on the "Withdraw" option.',w3:"Select your preferred withdrawal method.",w4:"Enter the amount you wish to withdraw, respecting the minimum. Confirm the operation.",
+mapp_t:"1Win Mobile Apps",mapp_d:"1Win offers an app optimised for Android as well as a responsive web version for iOS devices. Both allow fast and secure access to all functions.",
+a1:'Scroll to the bottom of the page and select "Android App".',a2:"Download the APK file from the link provided.",a3:'Enable "Install from unknown sources" in your device settings.',a4:"Start the installation by clicking on the downloaded file.",
+i1:"Tap the share icon at the bottom of the browser.",i2:'Select "Add to Home Screen".',i3:'Assign a name, such as "1Win Peru".',i4:'Tap "Add" to save the shortcut to your home screen.',
+sp_t:"Types of Sports at 1Win",sp_d:"The sports category at 1Win is one of the most comprehensive. From live events to pre-match betting, our platform offers an accessible experience for both novice and expert bettors.",
+sp1t:"Football",sp1d:"Over 150 active leagues including Premier League, La Liga, and Serie A.",sp2t:"Basketball",sp2d:"More than 90 leagues from NBA to Euroleague and ACB League.",sp3t:"Volleyball",sp3d:"More than 60 men's and women's leagues with international tournaments.",sp4t:"Tennis",sp4d:"Over 70 tournaments including Grand Slam, ATP Tour, and WTA Tour.",sp5d:"Over 80 active games including CS2, Dota 2, and League of Legends.",sp6t:"Virtual Sports",sp6d:"More than 40 leagues simulating real-life matches with immediate results.",
+lb_t:"Live Betting at 1Win",lb_d:"This category was created for users who wish to bet while sporting events are in progress. The odds change in real time depending on what is happening in the match, allowing you to take advantage of decisive moments to maximise your winnings. Sports available: football, basketball, tennis, table tennis, ice hockey, horse racing, eSports, virtual sports, and many more.",
+bs_t:"Bet Slip",bt1t:"Single",bt1d:"A bet on a single outcome in an event. Winnings = amount bet × odds offered.",bt2d:"A combination of several bets on different events. All must be successful to win.",bt3t:"Series",bt3d:"Multiple single bets on different events, with the same predetermined amount for each.",
+hb_t:"How to Bet on 1Win?",hb_d:"Betting at 1Win is simple: explore available events, select your market, and decide how much to bet.",
+hb1t:"Register",hb1d:"Register or log in with your details.",hb2t:"Deposit",hb2d:"Choose method and enter the amount.",hb3t:"Explore",hb3d:"Check the odds and sports categories.",hb4t:"Choose Bet",hb4d:"Select sport, type and enter amount.",hb5t:"Confirm",hb5d:'Click "Place a Bet".',
+od_t:"Odds Format",od1t:"Decimal",od1d:"Most commonly used in Peru. Represents the total amount you would win for each unit wagered.",od2t:"American",od2d:"Common in US betting markets, shown as a positive or negative number.",od3t:"Fractional",od3d:"Common in the UK, indicates potential winnings in relation to the stake placed.",
+cas_t:"Online Casino at 1Win",cas_d:"1Win online casino awaits you with over 13,000 games available. Titles from renowned providers such as NetEnt, Microgaming, Evolution Gaming, Play'n GO and Pragmatic Play.",
+c1t:"Quick Games",c1d:"Over 560 titles including Aviator, JetX, and Lucky Jet.",c2t:"Slots",c2d:"Over 10,000 games from leading software providers.",c3t:"Poker",c3d:"Over 80 game variants from classics to modern tournaments.",c4t:"Roulette",c4d:"300 tables available, both automated and live dealer.",c5t:"Live Casino",c5d:"Over 760 tables with real dealers in HD.",c6d:"15 exclusive in-house titles with increasing multipliers.",
+spon_t:"Sponsorship",spon_d:"We have built a network of partnerships that supports our presence as a major player in the iGaming ecosystem. Our strategic partners include international sports entities such as UEFA, UFC, WTA, FIBA, NHL and the ATP Finals. 1Win also collaborates with leading software developers including Evoplay, Evolution, Spinomenal, Spribe, BGaming, 100HP Gaming, and Smartsoft.",
+rg_t:"Responsible Gaming Rules",rg1:"Prohibition of participation by minors under 18 years of age",rg2:"Users can set limits on their deposits, bets and playing time",rg3:"Temporary or permanent self-exclusion",rg4:"Links to external organisations for specialist gambling addiction support",
+aff_t:"Affiliate Program",aff_d:"Our affiliate program is a unique opportunity to generate passive income. With over 30 million users and more than 100,000 partners.",
+af1t:"RevShare & CPA",af1d:"Two flexible revenue models",af2t:"Real-time Statistics",af2d:"Track performance instantly",af3t:"Global Support",af3d:"Localised assistance worldwide",af4t:"Daily Payment",af4d:"Get paid every day",
+leg_t:"Is 1Win Legal in Peru?",leg_d:"1Win's operation in Peru is supported by licence number 8048/JAZ 2018-040, issued by the government of Curacao. This accreditation allows it to offer remote gambling services by international regulatory and control standards. In Peru, foreign platforms with an active international licence can operate without restrictions.",
+sec_t:"Safety and Security Measures",sc1:"High-end SSL Data Encryption to protect personal and financial information",sc2:"Curacao International License",sc3:"Two-Factor Authentication (2FA) for an extra layer of security",sc4:"Transaction monitoring to detect suspicious activity",sc5:"Personal data protection regulations",
+con_t:"1Win Contacts",co1:"Live chat — available 24/7",co3:"Phone support",
+fq1q:"Is 1Win legal in Peru?",fq1a:"Yes, 1Win is a legal and operational online gaming and betting platform in Peru. Our company follows all local and international regulations.",
+fq2q:"What types of sports are available to bet on?",fq2a:"Football, basketball, tennis, volleyball, ice hockey, motorsports, eSports, and more.",
+fq3q:"What bonuses are available?",fq3a:"Welcome bonus up to 500% on the first deposit, ongoing promotions, cashback and loyalty programmes.",
+fq4q:"Can I bet with PEN?",fq4a:"Yes, 1Win allows bets to be placed in Peruvian soles (PEN).",
+fq5q:"Does 1Win have an affiliate programme?",fq5a:"Yes, with RevShare and CPA models, real-time stats, and daily payments.",
+fq6q:"Which casino providers work with 1Win?",fq6a:"Over 150 providers including NetEnt, Microgaming, Evolution Gaming, Pragmatic Play, and Play'n GO.",
+fq7q:"Does 1Win offer a mobile app?",fq7a:"Yes, mobile apps are available for both iOS and Android with full platform access.",
+ft_desc:"The leading online casino and sports betting platform in Peru since 2016.",ft_gen:"General Information",ft_leg:"Legal Information",ft_contact:"Contact Us",ft_about:"About 1Win",ft_aff:"Affiliate Program",ft_terms:"Terms and Conditions",ft_priv:"Privacy Policy",ft_resp:"Responsible Gaming",ft_rights:"All rights reserved"
+},es:{
+btn_create:"CREAR CUENTA",btn_download:"DESCARGAR APP",btn_register:"REGÍSTRATE EN 1WIN",
+nav_app:"App",nav_reg:"Registro",nav_bonus:"Bonos",nav_casino:"Casino",nav_live:"Casino en Vivo",nav_quick:"Juegos Rápidos",nav_sports:"Deportes",nav_esports:"eSports",nav_payments:"Depósito y Retiro",nav_contacts:"Contactos",
+hero_title:"1Win Perú – Casino Online y Apuestas Deportivas",
+hero_desc:"1Win Perú es una casa de apuestas en línea legal desde 2016, operando bajo la licencia 8048/JAZ 2018-040 otorgada por el gobierno de Curazao. En nuestro sitio, tendrás acceso a más de 10.000 eventos deportivos diarios junto con un catálogo de más de 10.400 juegos de casino. La plataforma 1Win destaca por su diseño funcional, cobertura de mercados y métodos de pago seguros. Usa nuestro bono de bienvenida de hasta 7.200 PEN en tus primeros cuatro depósitos con 500%.",
+hero_bonus:"500% Bono de Bienvenida hasta S/ 7.200",
+ov_title:"Resumen de 1Win",ov_desc:"1Win es una plataforma global de juegos de azar en línea operada por NextGen Development Labs Ltd. Desde su lanzamiento en 2016, nos hemos posicionado como una marca confiable dentro del sector iGaming, enfocada en ofrecer una experiencia integral de apuestas deportivas y juegos de casino con más de 10.400 juegos.",
+t_year:"Año de Fundación",t_lic:"Licencia",t_owner:"Propietario",t_lang:"Idiomas Disponibles",t_lang_v:"Español, Inglés, Alemán, Árabe, Chino, Coreano, entre otros",t_peru:"Disponibilidad en Perú",t_yes:"Sí",t_serv:"Servicios",t_serv_v:"Apuestas deportivas, casino online, juegos en vivo, póker y más",t_bonus:"Bono de Bienvenida",t_bonus_v:"500% en los primeros 4 depósitos hasta 7.200 PEN",t_cur:"Monedas Disponibles",t_app:"Aplicación",t_app_v:"Sí, disponible para Android e iOS",t_pay:"Métodos de Pago",t_pay_v:"Tarjetas bancarias, billeteras electrónicas, transferencias y criptomonedas",t_mindep:"Depósito Mínimo",t_minwd:"Retiro Mínimo",t_sup:"Servicio de Soporte",t_sup_v:"Correo, teléfono, chat en vivo",
+lic_t:"Licencia",lic_d:"1Win 2026 opera legalmente en Perú bajo una licencia internacional emitida por el gobierno de Curazao. El número de autorización es 8048/JAZ 2018-040, y garantiza que la plataforma cumple con los estándares regulatorios internacionales sobre juego responsable y protección de datos. Dicha acreditación permite a nuestros usuarios en territorio peruano apostar en línea con total seguridad.",
+hist_t:"Historia",hist_d:"La historia de 1Win comenzó en 2016, con nuestro objetivo de establecer una plataforma sólida en el mercado global de juegos de azar en línea. Desde entonces, hemos evolucionado con una propuesta diversificada que abarca deportes, casino, juegos en vivo y funciones exclusivas. Nuestro constante desarrollo nos ha permitido ganar presencia en mercados importantes, incluyendo Perú.",
+amb_t:"Embajador de Marca",amb_d:'En julio de 2024, David Warner fue anunciado como embajador global de 1Win, justo después de retirarse del cricket internacional. Su incorporación aportó visibilidad estratégica a nuestra marca y consolidó su presencia en nuevos mercados. En noviembre de 2024, 1Win y Warner lanzaron conjuntamente la campaña benéfica "1Win 1000 Hits".',
+ben_t:"Beneficios de 1Win para Jugadores Peruanos",ben_d:"La plataforma de 1Win Perú integra varias características que optimizan la experiencia de apuestas y juegos en línea para el usuario local. Estos son los principales beneficios:",
+b1t:"Apps Móviles Gratuitas",b1d:"Disponible para iOS y Android, diseño responsivo y navegación fluida.",b2t:"Juegos con Licencia",b2d:"Tragamonedas, póker, crash y títulos de dealer en vivo de más de 150 proveedores.",b3t:"Amplia Oferta Deportiva",b3d:"Más de 10.000 eventos diarios con cuotas competitivas y transmisión en vivo.",b4t:"Juegos Exclusivos",b4d:"Títulos desarrollados por 1Win disponibles solo en nuestra plataforma.",b5t:"Interfaz Optimizada",b5d:"Estructura clara, carga rápida y compatibilidad multidispositivo.",b6t:"Bono Progresivo",b6d:"Bono de bienvenida de hasta +500% distribuido en los primeros cuatro depósitos.",
+bon_t:"Ofertas de Bonos de 1Win en Perú",bon_c1:"Bono",bon_c2:"Descripción",
+bo1n:"500% en primer depósito",bo1d:"Recibe hasta 500% en tus primeros 4 depósitos hasta 7.200 PEN. El bono se acredita automáticamente.",bo2n:"30% cashback",bo2d:"Obtén un 30% de cashback en tus pérdidas semanales en tragamonedas. Se acredita los sábados.",bo3n:"Bono por descargar la app",bo3d:"Recibe 200 1Win Coins al descargar la app. Se pueden canjear por dinero real.",bo4n:"Bono multi apuesta",bo4d:"Apuesta en 5 o más eventos en un parlay y gana un porcentaje extra.",
+reg_t:"¿Cómo Registrarse en 1Win?",reg_intro:"Registrarse en la plataforma 1Win es un proceso simple que permite acceso inmediato a todos nuestros servicios de apuestas y juegos en línea disponibles en Perú. Aquí una guía paso a paso:",
+r1:'Haz clic en "Registrarse": Ubica el botón en la parte superior del sitio oficial.',r2:"Selecciona tu método de registro: Puedes usar redes sociales o completar un formulario con correo y teléfono.",r3:"Completa los campos requeridos: Ingresa los datos básicos solicitados.",r4:"Acepta nuestros términos: Verifica que los datos sean correctos y acepta los términos y condiciones.",r5:'Confirma tu cuenta: Haz clic en "Crear cuenta" para completar el proceso.',
+ver_t:"Verificación de Cuenta 1Win",v1:"Prepara tus documentos: Ten lista tu identificación (DNI, pasaporte o licencia de conducir).",v2:"Inicia sesión en tu perfil: Ve a la sección de verificación y sigue las instrucciones.",v3:"Sube los documentos requeridos: Sube archivos de forma segura directamente desde la plataforma.",v4:"Espera la validación: La revisión puede tardar hasta 72 horas. Una vez completada, todas las funciones se activan.",
+log_t:"Guía de Inicio de Sesión 1Win",l1:'Haz clic en "Iniciar sesión": El botón está en la esquina superior derecha.',l2:"Ingresa tus credenciales: Ingresa tu correo y contraseña.",l3:"Accede a tu cuenta: Comienza a apostar, jugar o administrar tu perfil.",
+promo_t:"Usa el Código Promocional 1Win",promo_d:"El código promocional de 1Win es una combinación alfanumérica que, al activarse, permite a los jugadores recibir dinero extra. La forma más común de obtener un código es a través de las redes sociales de la casa de apuestas.",
+pay_t:"Métodos de Pago en 1Win",dep_m:"Métodos de Depósito",wd_m:"Métodos de Retiro",
+hdep_t:"¿Cómo Depositar?",d1:'Haz clic en "Hacer un depósito" en la parte superior.',d2:"Elige tu método de pago preferido.",d3:"Especifica el monto que deseas depositar.",d4:'Confirma la transacción y haz clic en "Recargar".',
+hwd_t:"¿Cómo Retirar?",w1:"Inicia sesión y ve al menú de perfil.",w2:'Haz clic en la opción "Retirar".',w3:"Selecciona tu método de retiro preferido.",w4:"Ingresa el monto y confirma la operación.",
+mapp_t:"Aplicaciones Móviles 1Win",mapp_d:"1Win ofrece una app optimizada para Android y una versión web responsiva para iOS. Ambas permiten acceso rápido y seguro a todas las funciones.",
+a1:'Desplázate hasta el final y selecciona "App Android".',a2:"Descarga el archivo APK.",a3:'Habilita "Instalar de fuentes desconocidas" en configuración.',a4:"Inicia la instalación.",
+i1:"Toca el ícono de compartir en el navegador.",i2:'Selecciona "Agregar a Pantalla de Inicio".',i3:'Asigna un nombre como "1Win Perú".',i4:'Toca "Agregar" para guardar el acceso directo.',
+sp_t:"Tipos de Deportes en 1Win",sp_d:"La categoría de deportes en 1Win es una de las más completas. Desde eventos en vivo hasta apuestas previas, nuestra plataforma ofrece una experiencia accesible.",
+sp1t:"Fútbol",sp1d:"Más de 150 ligas activas incluyendo Premier League, La Liga y Serie A.",sp2t:"Baloncesto",sp2d:"Más de 90 ligas desde la NBA hasta la Euroleague.",sp3t:"Voleibol",sp3d:"Más de 60 ligas masculinas y femeninas con torneos internacionales.",sp4t:"Tenis",sp4d:"Más de 70 torneos incluyendo Grand Slam, ATP Tour y WTA Tour.",sp5d:"Más de 80 juegos activos incluyendo CS2, Dota 2 y League of Legends.",sp6t:"Deportes Virtuales",sp6d:"Más de 40 ligas que simulan partidos reales con resultados inmediatos.",
+lb_t:"Apuestas en Vivo en 1Win",lb_d:"Esta categoría fue creada para usuarios que desean apostar mientras los eventos deportivos están en progreso. Las cuotas cambian en tiempo real según lo que ocurre en el partido. Deportes disponibles: fútbol, baloncesto, tenis, tenis de mesa, hockey sobre hielo, carreras de caballos, eSports y más.",
+bs_t:"Cupón de Apuestas",bt1t:"Simple",bt1d:"Una apuesta a un solo resultado. Ganancia = monto × cuota ofrecida.",bt2d:"Combinación de varias apuestas. Todas deben acertar para ganar.",bt3t:"Serie",bt3d:"Múltiples apuestas simples con el mismo monto predeterminado.",
+hb_t:"¿Cómo Apostar en 1Win?",hb_d:"Apostar en 1Win es simple: explora los eventos, selecciona tu mercado y decide cuánto apostar.",
+hb1t:"Registrarse",hb1d:"Regístrate o inicia sesión.",hb2t:"Depositar",hb2d:"Elige método e ingresa monto.",hb3t:"Explorar",hb3d:"Revisa cuotas y categorías.",hb4t:"Elegir Apuesta",hb4d:"Selecciona deporte y monto.",hb5t:"Confirmar",hb5d:'Haz clic en "Hacer apuesta".',
+od_t:"Formato de Cuotas",od1t:"Decimal",od1d:"Más usado en Perú. Representa el monto total ganado por unidad apostada.",od2t:"Americano",od2d:"Común en EE.UU., mostrado como número positivo o negativo.",od3t:"Fraccional",od3d:"Común en Reino Unido, indica ganancias potenciales en relación a la apuesta.",
+cas_t:"Casino Online en 1Win",cas_d:"El casino online de 1Win te espera con más de 13.000 juegos. Títulos de proveedores reconocidos como NetEnt, Microgaming, Evolution Gaming, Play'n GO y Pragmatic Play.",
+c1t:"Juegos Rápidos",c1d:"Más de 560 títulos incluyendo Aviator, JetX y Lucky Jet.",c2t:"Tragamonedas",c2d:"Más de 10.000 juegos de proveedores líderes.",c3t:"Póker",c3d:"Más de 80 variantes desde clásicos hasta torneos modernos.",c4t:"Ruleta",c4d:"300 mesas disponibles, automatizadas y con dealer en vivo.",c5t:"Casino en Vivo",c5d:"Más de 760 mesas con dealers reales en HD.",c6d:"15 títulos exclusivos con multiplicadores crecientes.",
+spon_t:"Patrocinios",spon_d:"Hemos construido una red de alianzas con entidades deportivas internacionales como UEFA, UFC, WTA, FIBA, NHL y ATP Finals. 1Win también colabora con desarrolladores líderes incluyendo Evoplay, Evolution, Spinomenal, Spribe, BGaming, 100HP Gaming y Smartsoft.",
+rg_t:"Reglas de Juego Responsable",rg1:"Prohibición de participación de menores de 18 años",rg2:"Los usuarios pueden establecer límites en depósitos, apuestas y tiempo de juego",rg3:"Autoexclusión temporal o permanente",rg4:"Enlaces a organizaciones externas de apoyo por adicción al juego",
+aff_t:"Programa de Afiliados",aff_d:"Nuestro programa de afiliados es una oportunidad única de generar ingresos pasivos. Con más de 30 millones de usuarios y más de 100.000 socios.",
+af1t:"RevShare y CPA",af1d:"Dos modelos de ingresos flexibles",af2t:"Estadísticas en Tiempo Real",af2d:"Rastrea el rendimiento al instante",af3t:"Soporte Global",af3d:"Asistencia localizada en todo el mundo",af4t:"Pago Diario",af4d:"Recibe pagos todos los días",
+leg_t:"¿Es 1Win Legal en Perú?",leg_d:"La operación de 1Win en Perú está respaldada por la licencia número 8048/JAZ 2018-040. Esta acreditación permite ofrecer servicios de juego remoto según estándares regulatorios internacionales. En Perú, las plataformas extranjeras con licencia internacional activa pueden operar sin restricciones.",
+sec_t:"Medidas de Seguridad y Protección",sc1:"Cifrado SSL de alto nivel para proteger información personal y financiera",sc2:"Licencia Internacional de Curazao",sc3:"Autenticación de Dos Factores (2FA)",sc4:"Monitoreo de transacciones para detectar actividad sospechosa",sc5:"Regulaciones de protección de datos personales",
+con_t:"Contactos de 1Win",co1:"Chat en vivo — disponible 24/7",co3:"Soporte telefónico",
+fq1q:"¿Es 1Win legal en Perú?",fq1a:"Sí, 1Win es una plataforma legal y operativa de juegos y apuestas en línea en Perú.",
+fq2q:"¿Qué tipos de deportes están disponibles?",fq2a:"Fútbol, baloncesto, tenis, voleibol, hockey sobre hielo, automovilismo, eSports y más.",
+fq3q:"¿Qué bonos hay disponibles?",fq3a:"Bono de bienvenida hasta 500%, promociones continuas, cashback y programas de fidelidad.",
+fq4q:"¿Puedo apostar con PEN?",fq4a:"Sí, 1Win permite realizar apuestas en soles peruanos (PEN).",
+fq5q:"¿1Win tiene programa de afiliados?",fq5a:"Sí, con modelos RevShare y CPA, estadísticas en tiempo real y pagos diarios.",
+fq6q:"¿Qué proveedores de casino trabajan con 1Win?",fq6a:"Más de 150 proveedores incluyendo NetEnt, Microgaming, Evolution Gaming, Pragmatic Play y Play'n GO.",
+fq7q:"¿1Win ofrece una app móvil?",fq7a:"Sí, apps disponibles para iOS y Android con acceso completo.",
+ft_desc:"La plataforma líder de casino online y apuestas deportivas en Perú desde 2016.",ft_gen:"Información General",ft_leg:"Información Legal",ft_contact:"Contáctenos",ft_about:"Sobre 1Win",ft_aff:"Programa de Afiliados",ft_terms:"Términos y Condiciones",ft_priv:"Política de Privacidad",ft_resp:"Juego Responsable",ft_rights:"Todos los derechos reservados"
+}};
+
+let cL='en';
+function setLang(l){
+  cL=l;
+  document.getElementById('clang').textContent=l.toUpperCase();
+  document.getElementById('clang-flag').src=l==='en'?'https://flagcdn.com/w40/gb.png':'https://flagcdn.com/w40/es.png';
+  document.getElementById('ldd').classList.remove('show');
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k=el.getAttribute('data-i18n');
+    if(T[l]&&T[l][k]) el.innerHTML=T[l][k];
+  });
+  document.documentElement.lang=l;
+}
+function toggleDD(){ document.getElementById('ldd').classList.toggle('show'); }
+document.addEventListener('click',e=>{ if(!e.target.closest('.lang-switch')) document.getElementById('ldd').classList.remove('show'); });
+
+// FAQ
+function tFaq(el){
+  const it=el.parentElement, a=it.querySelector('.faq-a'), on=it.classList.contains('on');
+  document.querySelectorAll('.faq-i').forEach(i=>{ i.classList.remove('on'); i.querySelector('.faq-a').style.maxHeight='0'; });
+  if(!on){ it.classList.add('on'); a.style.maxHeight=a.scrollHeight+'px'; }
+}
+
+// Scroll top
+window.addEventListener('scroll',()=>{
+  document.getElementById('sctop').classList.toggle('vis',window.scrollY>600);
+});
+</script>
 </body>
 </html>
