@@ -1247,4 +1247,9 @@ function setLang(l){
   document.documentElement.lang=l;
 }
 function toggleDD(){ document.getElementById('ldd').classList.toggle('show'); }
-document.addEventListen
+document.addEventListener('click',function(e){
+  if(!e.target.closest('#lang-btn')) document.getElementById('ldd').classList.remove('show');
+});
+</script>
+</body>
+</html>
